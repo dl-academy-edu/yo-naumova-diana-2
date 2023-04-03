@@ -22,19 +22,176 @@
     <!-- endbuild -->
   </head>
   <body>
-    <div class="wrapper">
-      <main class="content">
-        <div class="coming-soon">
-          <h1 class="coming-soon__title">
-            <span>A</span>
-            <span>T</span>
-            <span>X</span>
-          </h1>
+    @@include('_blocks/header.html')
+    <main class="main">
+        <div class="banner container">
+            <div class="banner_wrapper">
+                <ul class="banner_list">
+                    <li class="number">01</li>
+                    <li class="banner_list-item"><button type="button" class="banner_list-button"></button></li>
+                    <li class="banner_list-item"><button type="button" class="banner_list-button"></button></li>
+                    <li class="banner_list-item"><button type="button" class="banner_list-button"></button></li>
+                    <li class="banner_list-item"><button type="button" class="banner_list-button"></button></li>
+                </ul>
+                <ul class="banner_content-list">
+                    <li class="banner_content-item">
+                        <h1 class="banner_title">THE OOH NOO COLLECTION</h1>
+                    </li>
+                    <li class="banner_content-item">
+                        <p class="banner_text">Designed in Slovenia</p>
+                    </li>
+                    <li class="banner_content-item"><button type="button" class="banner_button"
+                            aria-label="Open popup">EXPLORE NOW</button></li>
+                    <li class="banner_content-item"><img src="./images/monster.png" alt="Monster" width="636"
+                            height="461" class="banner_pic"></li>
+                </ul>
+            </div>
+            <p class="banner_subtext">Free (continental) USA shipping on all orders of $100 USD or more!</p>
         </div>
-      </main>
-      @@include('blocks/footer.html')
-    </div>
+        <section class="categories container">
+            <h2 class="category_title">CATEGORY PRODUCTS</h2>
+            <ul class="categories_list">
+                <li class="categories_list-item">
+                    <img src="./images/shirt.jpg" alt="Shirt" width="280" height="270" class="shirt_pic">
+                    <a class="categories_list-link" href="#">APPAREL KIDS</a>
+                </li>
+                <li class="categories_list-item">
+                    <img src="./images/sock.jpg" alt="Sock" width="280" height="270" class="sock_pic">
+                    <a class="categories_list-link" href="#">HOLIDAY SHOP</a>
+                </li>
+                <li class="categories_list-item">
+                    <img src="./images/deer.jpg" alt="Deer" width="280" height="270" class="deer_pic">
+                    <a class="categories_list-link" href="./pages/toys.html">TOYS</a>
+                </li>
+                <li class="categories_list-item">
+                    <img src="./images/yeti.jpg" alt="Yeti" width="280" height="270" class="yeti_pic">
+                    <a class="categories_list-link" href="#">ACCESSORIES</a>
+                </li>
+            </ul>
+            <ul class="categories_text">
+                <li class="categories_text-item"><button type="button" class="categories_button-back"
+                        aria-label="Previous category"><img src="./icon/back.svg" alt="btn-back" width="13"
+                            height="26"></button></li>
+                <li class="categories_text-item"><button type="button" class="categories_button-ahead"
+                        aria-label="Next category"><img src="./icon/ahead.svg" alt="btn-ahead" width="13"
+                            height="26"></button></li>
+                <li class="categories_text-item">Modern finds for the modern home. Curated goods by unique designers
+                    around the world from fashion to furniture for kids and adults.
+                </li>
+            </ul>
+        </section>
+        <section class="delivery container">
+            <img src="./images/woman.jpg" alt="Woman" width="480" height="559" class="delivery_pic">
+            <ul class="delivery_list">
+                <li class="delivery-title">
+                    <h2 class="delivery_title">DELIVERY</h2>
+                </li>
+                <li class="delivery_list-main"><a class="delivery_link-main" href="#">Delivery</a></li>
+                <li class="delivery_list-item"><a class="delivery_list-link" href="#">Guarantee</a></li>
+                <li class="delivery_list-item"><a class="delivery_list-link" href="#">Credit</a></li>
+                <li class="delivery_text-first">
+                    <p>Some days i feel like i've been working on dlk my entire life and there are other days that i am
+                        completely shocked that four years have flown by. It's simply magical.</p>
+                </li>
+                <li class="delivery_text-second">
+                    <p>What started as an outlet to deal with the traumatic loss of my husband, dlk has now become a
+                        truly
+                        happy place for me and i have you and all of the beautiful designers that we work with to thank!
+                    </p>
+                </li>
+                <li class="delivery_btn"><button type="button" class="delivery_button"
+                        aria-label="Open deivery page">LEARN MORE</button></li>
+            </ul>
+        </section>
+        <div class="companies_logo container">
+            <ul class="companies_list">
+                <li class="companies_list-item"><img src="./images/mail.png" width="193" height="60"
+                        alt="mail.ru group_logo"></li>
+                <li class="companies_list-item"><img src="./images/apple.png" width="179" height="61" alt="Apple_logo">
+                </li>
+                <li class="companies_list-item"><img src="./images/eltex.png" width="216" height="46" alt="ELTEX_logo">
+                </li>
+                <li class="companies_list-item"><img src="./images/owox.png" width="211" height="40" alt="OWOX_logo">
+                </li>
+            </ul>
+        </div>
+        <div class="about_company container">
+            <ul class="about_us_list">
+                <li class="about_us_list-item">
+                    <h2 class="about_us_title" id="about_us">DESIGN LIFE KIDS</h2>
+                </li>
+                <li class="about_us_list-item">
+                    <p class="about_us_subtitle">About Us</p>
+                </li>
+                <li class="about_us_list-item">
+                    <p class="about_us_text">Some days i feel like i've been working on dlk my entire life and there
+                        are other days that i am completely shocked that four years have flown by. It's simply
+                        magical.</p>
+                </li>
+                <li class="about_us_list-item"><button type="button" class="about_us_button"
+                        aria-label="Open catalog page">BUY NOW</button></li>
+            </ul>
+            <ul class="contacts_list">
+                <li class="contacts_list-item">
+                    <h2 class="contacts_title">CONTACTS</h2>
+                </li>
+                <li class="contacts_list-item">
+                    <p class="contacts_text">Some days i feel like i've been working on dlk my entire life and there
+                        are other days that i am completely shocked that four years have flown by. It's simply
+                        magical.</p>
+                </li>
+                <li class="contacts_list-map">
+                    <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d3438.979307179263!2d-122.42051417544492!3d37.776961027283065!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1677918726204!5m2!1sru!2sru"
+                    width="483" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </li>
+            </ul>
+        </div>
+        </main>
 
-    <script src="js/app.js" defer></script>
+        @@include('_blocks/footer.html')
+        
+        <div class="popup">
+          <div class="popup_wrapper">
+              <form method="post" action="#" class="contact_form">
+                  <div class="form_inner-wr">
+                      <div class="form_wrapper-name">
+                          <label for="name" class="form_label">Name
+                              <input type="text" id="name" class="form_input-name" placeholder="Ivan Ivanov">
+                          </label>
+                      </div>
+                      <div class="form_wrapper">
+                          <div class="form_inner">
+                              <label for="phone" class="form_label">Phone
+                                  <input type="tel" id="phone" class="form_input">
+                              </label>
+                              <label for="email" class="form_label">Email
+                                  <input type="email" id="email" class="form_input">
+                              </label>
+                          </div>
+                      </div>
+                      <div class="form_message">
+                          <label for="message" class="form_label">Message
+                              <textarea class="form_text-message" id="message" cols="30" rows="10"></textarea>
+                          </label>
+                      </div>
+                      <div class="consent_wrapper">
+                          <input type="checkbox" id="consent" class="form_consent">
+                          <label for="consent" class="form_label-consent">By clicking on the button, you consent to the
+                              processing
+                              of your personal data
+                          </label>
+                      </div>
+                      <button type="submit" class="form_button" aria-label="Send a massege">Submit</button>
+                  </div>
+              </form>
+              <button type="button" class="close" aria-label="Close popup"></button>
+          </div>
+          <div class="overlay"></div>
+      </div>
+      <script src="./js/popup.min.js"></script>
+      <script src="js/app.js" defer></script>
   </body>
 </html>
