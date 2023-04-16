@@ -143,8 +143,13 @@
 
 .connect_button {
   display: flex;
-  margin-top: -41px;
-  margin-left: 349px;
+  margin-top: -40px;
+  margin-left: 345px;
+  width: 81px;
+  height: 40px;
+  padding: 8px 21px;
+  border-style: none;
+  background-color: #000000;
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 700;
@@ -152,8 +157,6 @@
   line-height: 22px;
   text-align: center;
   text-transform: uppercase;
-  padding: 8px 21px;
-  background-color: #000000;
   color: #FFFFFF;
   cursor: pointer;
 }
@@ -237,7 +240,7 @@
   margin: 0 auto;
   width: 80px;
   height: 15px;
-  background-image: url("../images/star.svg");
+  background-image: url("/img/star.svg");
   background-size: 16px auto;
 }
 
@@ -266,11 +269,11 @@
 }
 
 .rating_input:checked, .rating_input:hover {
-  background-image: url("../images/star_checked.svg");
+  background-image: url("/img/star_checked.svg");
 }
 
 .rating_input:hover ~ .rating_input {
-  background-image: url("../images/star.svg");
+  background-image: url("/img/star.svg");
 }
 
 /* options */

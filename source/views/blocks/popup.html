@@ -1,0 +1,38 @@
+<div class="popup">
+    <div class="popup_wrapper">
+        <form method="post" action="#" class="contact_form">
+            <div class="form_inner-wr">
+                <div class="form_wrapper-name">
+                    <label for="name" class="form_label">Name
+                        <input type="text" id="name" class="form_input-name" placeholder="Ivan Ivanov">
+                    </label>
+                </div>
+                <div class="form_wrapper">
+                    <div class="form_inner">
+                        <label for="phone" class="form_label">Phone
+                            <input type="tel" id="phone" class="form_input">
+                        </label>
+                        <label for="email" class="form_label">Email
+                            <input type="email" id="email" class="form_input">
+                        </label>
+                    </div>
+                </div>
+                <div class="form_message">
+                    <label for="message" class="form_label">Message
+                        <textarea class="form_text-message" id="message" cols="30" rows="10"></textarea>
+                    </label>
+                </div>
+                <div class="consent_wrapper">
+                    <input type="checkbox" id="consent" class="form_consent">
+                    <label for="consent" class="form_label-consent">By clicking on the button, you consent to the
+                        processing
+                        of your personal data
+                    </label>
+                </div>
+                <button type="submit" class="form_button" aria-label="Send a massege">Submit</button>
+            </div>
+        </form>
+        <button type="button" class="close" aria-label="Close popup"></button>
+    </div>
+    <div class="overlay"></div>
+  </div>

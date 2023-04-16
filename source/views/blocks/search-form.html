@@ -1,0 +1,51 @@
+<div class="search-form">
+    <div class="settings_wrapper container">
+        <div class="range_wrapper">
+            <h2 class="search-form_title">Cost</h2>
+            <input type="range" id="range" min="0" max="500" step="100" value="0" class="set_range">
+            <ul class="range_list">
+            <li class="min_range">0</li>
+            <li class="max_range">500</li>
+            </ul>
+        </div>
+        <div class="color_wrapper">
+            <h2 class="search-form_title">Color</h2>
+            <p class="set_color">
+                <input type="checkbox" id="color" class="color_input">
+                <label for="color" class="color_label">Black</label>
+            </p>
+            <p class="set_color">
+                <input type="checkbox" id="Blue" class="color_input">
+                <label for="Blue" class="color_label">Blue</label>
+            </p>
+            <p class="set_color">
+                <input type="checkbox" id="Green" class="color_input">
+                <label for="Green" class="color_label">Green</label>
+            </p>
+            <p class="set_color">
+                <input type="checkbox" id="White" class="color_input">
+                <label for="White" class="color_label">White</label>
+            </p>
+        </div>
+        <div class="delivery_wrapper">
+            <h2 class="search-form_title">Delivery</h2>
+            <p class="set_delivery">
+                <input type="radio" id="Free" name="del_btn" class="delivery_input">
+                <label for="Free" class="delivery_label">Free shipping</label>
+            </p>
+            <p class="set_delivery">
+                <input type="radio" id="Fast" name="del_btn" class="delivery_input">
+                <label for="Fast" class="delivery_label">Fast shipping</label>
+            </p>
+        </div>
+        <div class="amount_wrapper">
+            <h2 class="search-form_title">Amount</h2>
+            <ul class="amount_list">
+                <li class="amount_list-item"><input type="button" class="amount_btn" value="0-5"></li>
+                <li class="amount_list-item"><input type="button" class="amount_btn" value="10-20"></li>
+                <li class="amount_list-item"><input type="button" class="amount_btn" value="20-50"></li>
+            </ul>
+        </div>
+        <button type="button" class="search-form_button" aria-label="Apply settings">APPLY</button>
+    </div>
+</div>
