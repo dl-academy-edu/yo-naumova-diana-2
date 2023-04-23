@@ -25,7 +25,10 @@
       </ul>
       <form action="#" class="email_form">
           <input type="email" class="email" id="Email" placeholder="Email">
-          <button type="button" class="connect_button" aria-label="Join to get news">Join</button>
+          @@include('blocks/button.html',{
+            'class': "connect_button",
+            'aria-label': "Join to get news",
+            'buttonName': "JOIN"})
       </form>
       <ul class="connect_list">
           <li class="connect_list-item">

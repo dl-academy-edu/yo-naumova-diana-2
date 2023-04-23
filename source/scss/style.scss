@@ -21,15 +21,18 @@
 @import "_blocks/footer";
 @import "_blocks/popup";
 @import "_blocks/link";
+@import "_blocks/button";
 @import "_blocks/title";
 @import "_blocks/category";
 @import "_blocks/sub-category";
 @import "_blocks/search-form";
 @import "_blocks/pagination";
+@import "_blocks/article";
 @import "catalog";
 @import "toys";
 @import "blog";
 @import "contact";
+@import "svg";
 /*
   Ниже пример подключения других блоков
 
@@ -85,6 +88,7 @@
       background-color: #d6cac2;
       border-style: none;
       cursor: pointer;
+      transition: background-color 0.7s;
   
       &:hover {
         background-color: #725F5B;
@@ -127,38 +131,12 @@
 
   &_button {
     display: flex;
+    align-items: center;
     margin-left: 94px;
     margin-top: 21px;
     width: 161px;
     height: 40px;
     padding: 7px 20px 7px 20px;
-    border-style: none;
-    background-color: #000000;
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 22px;
-    align-items: center;
-    text-align: center;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    cursor: pointer;
-
-    &:hover {
-      background-color: #C29974;
-      border-style: none;
-    }
-
-    &:active {
-      background-color: #CFAF91;
-      border-style: none;
-    }
-
-    &:disabled {
-      background-color: #C7C1C1;
-      border-style: none;
-    }
   }
 
   &_pic {
@@ -236,13 +214,6 @@
     margin-left: 58px;
     margin-top: -30px;
     margin-bottom: 1px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 38px;
-    line-height: 46px;
-    text-transform: uppercase;
-    color: #1E0606;
   }
 
   &_link-main {
@@ -282,39 +253,12 @@
 
   &_button {
     display: flex;
+    align-items: center;
     margin-top: 8px;
     margin-left: 57px;
     width: 150px;
     height: 40px;
     padding: 9px 21px 9px 21px;
-    padding: 9px 21px 9px 21px;
-    border-style: none;
-    background: #000000;
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 22px;
-    align-items: center;
-    text-align: center;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    cursor: pointer;
-
-    &:hover {
-      background-color: #C29974;
-      border-style: none;
-    }
-
-    &:active {
-      background-color: #CFAF91;
-      border-style: none;
-    }
-
-    &:disabled {
-      background-color: #C7C1C1;
-      border-style: none;
-    }
   }
 }
 
@@ -352,13 +296,6 @@
     position: absolute;
     margin-top: -24px;
     margin-left: -10px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 38px;
-    line-height: 46px;
-    text-transform: uppercase;
-    color: #1E0606;
   }
   &_subtitle {
     display: flex;
@@ -386,39 +323,13 @@
   }
   &_button {
     display: flex;
+    align-items: center;
     margin-top: 5px;
+    margin-bottom: 27px;
     margin-left: -10px;
     width: 124px;
     height: 40px;
     padding: 8px 21px 8px 21px;
-    border-style: none;
-    background-color: #000000;
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 22px;
-    align-items: center;
-    text-align: center;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    cursor: pointer;
-    margin-bottom: 27px;
-    
-    &:hover {
-      background-color: #C29974;
-      border-style: none;
-    }
-  
-    &:active {
-      background-color: #CFAF91;
-      border-style: none;
-    }
-  
-    &:disabled {
-      background-color: #C7C1C1;
-      border-style: none;
-    }
   }
 }
 
@@ -438,13 +349,6 @@
     position: absolute;
     margin-top: -26px;
     margin-left: -11px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 38px;
-    line-height: 46px;
-    text-transform: uppercase;
-    color: #1E0606;
   }
 
   &-text {

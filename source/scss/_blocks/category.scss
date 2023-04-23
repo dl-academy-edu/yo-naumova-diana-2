@@ -4,13 +4,6 @@
   &_title {
     display: flex;
     margin-top: 92px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 38px;
-    line-height: 46px;
-    text-transform: uppercase;
-    color: #1E0606;
   }
   
   &_list {
@@ -40,13 +33,16 @@
       color: #FFFFFF;
       text-shadow: 0px 0px 40px #93030340;
       position: absolute;
+      transition: text-decoration 0.7s;
+
       &:hover {
-          text-decoration-line: underline;
-          text-decoration-color: #ffffff;
+        text-decoration-line: underline;
+        text-decoration-color: #ffffff;
       }
+
       &:active {
-          text-decoration-line: underline;
-          text-decoration-color: #ffffff;
+        text-decoration-line: underline;
+        text-decoration-color: #ffffff;
       }
     }
   }

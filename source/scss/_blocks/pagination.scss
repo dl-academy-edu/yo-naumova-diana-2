@@ -3,75 +3,75 @@
 .pages {
     display: flex;
     justify-content: center;
-}
 
-.pages_list {
-    display: flex;
-    align-items: center;
-    margin-top: 13px;
-    margin-left: 37px;
-    margin-bottom: -41px;
-    column-gap: 65px;
-}
+    &_list {
+        display: flex;
+        align-items: center;
+        margin-top: 13px;
+        margin-left: 37px;
+        margin-bottom: -41px;
+        column-gap: 65px;
+    
+        &-link {
+            display: flex;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 20px;
+            text-transform: uppercase;
+            color: #1E0606;
+            transition: color 0.7s;
+        
+            &:hover {
+                color: #AAAAAA;
 
-.pages_list-item {
-    display: flex;
-}
+            }
+        
+            &:active {
+                color: #C29974;
+            }
+            
+        }
+    }
 
-.pages_list-link {
-    display: flex;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 20px;
-    text-transform: uppercase;
-    color: #1E0606;
-}
+    &_button-back {
+        display: flex;
+        margin-left: -75px;
+        margin-right: 390px;
+        border-style: none;
+        background-color: #ffffff;
+    
+        &:hover {
+            background-image: url("/img/page_back_hover.svg");
+            transform: rotate(180deg);
+            background-repeat: no-repeat;
+        }
+    
+        &:active {
+            background-image: url("/img/page_back_active.svg");
+            transform: rotate(180deg);
+            background-repeat: no-repeat;
+        }
+        
+    }
 
-.pages_list-link:hover {
-    color: #AAAAAA;
-}
-
-.pages_list-link:active {
-    color: #C29974;
-}
-
-.pages_button-back {
-    display: flex;
-    margin-left: -75px;
-    margin-right: 390px;
-    border-style: none;
-    background-color: #ffffff;
-}
-
-.pages_button-back:hover {
-    background-image: url("/img/page_back_hover.svg");
-    transform: rotate(180deg);
-    background-repeat: no-repeat;
-}
-
-.pages_button-back:active {
-    background-image: url("/img/page_back_active.svg");
-    transform: rotate(180deg);
-    background-repeat: no-repeat;
-}
-
-.pages_button-ahead {
-    display: flex;
-    margin-left: 391px;
-    border-style: none;
-    background-color: #ffffff;
-}
-
-.pages_button-ahead:hover {
-    background-image: url("/img/page_ahead_hover.svg");
-    background-repeat: no-repeat;
-}
-
-.pages_button-ahead:active {
-    background-image: url("/img/page_ahead_active.svg");
-    background-repeat: no-repeat;
+    &_button-ahead {
+        display: flex;
+        margin-left: 391px;
+        border-style: none;
+        background-color: #ffffff;
+    
+        &:hover {
+            background-image: url("/img/page_ahead_hover.svg");
+            background-repeat: no-repeat;
+        }
+    
+        &:active {
+            background-image: url("/img/page_ahead_active.svg");
+            background-repeat: no-repeat;
+        }
+    }
 }
 
 .nav-link--vector:hover {

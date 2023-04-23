@@ -27,10 +27,10 @@
             <section class="search_line container">
                 <h1 class="page_title">CONTACT US</h1>
                 <ul class="search_line_list">
-                    <li class="search_line_list-item"><a class="search_line_list-link" href="#">Home</a></li>
+                    <li class="search_line_list-item"><a class="search_line_list-link" href="/index.html">Home</a></li>
                     <li class="search_line_list-item"><button type="button" class="search_line_button-ahead"><img src="/img/icon/ahead.svg" alt="btn-ahead" width="8" height="12"></button>
                     </li>
-                    <li class="search_line_list-item"><a class="search_line_list-link" href="#">Contact Us</a></li>
+                    <li class="search_line_list-item"><a class="search_line_list-link" href="/contact.html">Contact Us</a></li>
                 </ul>
             </section>
             <div class="contact_page container">
@@ -63,7 +63,10 @@
                                         of your personal data
                                 </label>
                             </div>
-                            <button type="submit" class="form_button" aria-label="Send a massege">Submit</button>
+                            @@include('blocks/button.html',{
+                                'class': "form_button",
+                                'aria-label': "Send a message",
+                                'buttonName': "SUBMIT"})
                         </div>
                     </form>
                 </div>

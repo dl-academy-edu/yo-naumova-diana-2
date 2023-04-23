@@ -46,6 +46,9 @@
                 <li class="amount_list-item"><input type="button" class="amount_btn" value="20-50"></li>
             </ul>
         </div>
-        <button type="button" class="search-form_button" aria-label="Apply settings">APPLY</button>
+        @@include('blocks/button.html',{
+            'class': "search-form_button",
+            'aria-label': "Apply settings",
+            'buttonName': "APPLY"})
     </div>
 </div>

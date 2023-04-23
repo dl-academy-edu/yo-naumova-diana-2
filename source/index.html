@@ -40,8 +40,12 @@
                         <li class="banner_content-item">
                             <p class="banner_text">Designed in Slovenia</p>
                         </li>
-                        <li class="banner_content-item"><button type="button" class="banner_button"
-                                aria-label="Open popup">EXPLORE NOW</button></li>
+                        <li class="banner_content-item">
+                            @@include('blocks/button.html',{
+                                'class': "banner_button",
+                                'aria-label': "Open popup",
+                                'buttonName': "EXPLORE NOW"})
+                        </li>
                         <li class="banner_content-item"><img src="./img/monster.png" alt="Monster" width="636"
                                 height="461" class="banner_pic"></li>
                     </ul>
@@ -111,8 +115,12 @@
                             happy place for me and i have you and all of the beautiful designers that we work with to thank!
                         </p>
                     </li>
-                    <li class="delivery_btn"><button type="button" class="delivery_button"
-                            aria-label="Open deivery page">LEARN MORE</button></li>
+                    <li class="delivery_btn">
+                        @@include('blocks/button.html',{
+                            'class': "delivery_button",
+                            'aria-label': "Open delivery page",
+                            'buttonName': "LEARN MORE"})
+                    </li>
                 </ul>
             </section>
             <div class="companies container">
@@ -142,8 +150,12 @@
                             are other days that i am completely shocked that four years have flown by. It's simply
                             magical.</p>
                     </li>
-                    <li class="about_us_list-item"><button type="button" class="about_us_button"
-                            aria-label="Open catalog page">BUY NOW</button></li>
+                    <li class="about_us_list-item">
+                        @@include('blocks/button.html',{
+                            'class': "about_us_button",
+                            'aria-label': "Open catalog page",
+                            'buttonName': "BUY NOW"})
+                    </li>
                 </ul>
                 <ul class="contacts_list">
                     <li class="contacts_list-item">

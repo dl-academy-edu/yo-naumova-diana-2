@@ -7,17 +7,17 @@
     height: 254px;
     margin-top: 63px;
     background-color: #7d97da33;
-}
 
-.search-form_title {
-    display: flex;
-    margin-top: 33px;
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 22px;
-    color: #1E0606;
+    &_title {
+        display: flex;
+        margin-top: 33px;
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 22px;
+        color: #1E0606;
+    }
 }
 
 .settings_wrapper {
@@ -104,16 +104,16 @@
 .color_label {
     display: flex;
     align-items: center;
-}
 
-.color_label:hover {
-    text-decoration-line: underline;
-    text-decoration-color: #1E0606;
-}
+    &:hover {
+        text-decoration-line: underline;
+        text-decoration-color: #1E0606;
+    }
 
-.color_label:active {
-    text-decoration-line: underline;
-    text-decoration-color: #1E0606;
+    &:active {
+        text-decoration-line: underline;
+        text-decoration-color: #1E0606;
+    }
 }
 
 .color_input {
@@ -168,16 +168,16 @@
 .delivery_label {
     display: flex;
     align-items: center;
-}
 
-.delivery_label:hover {
+    &:hover {
+        text-decoration-line: underline;
+        text-decoration-color: #1E0606;
+    }
+
+    &:active {
     text-decoration-line: underline;
     text-decoration-color: #1E0606;
-}
-
-.delivery_label:active {
-    text-decoration-line: underline;
-    text-decoration-color: #1E0606;
+    }
 }
 
 .delivery_input {
@@ -237,53 +237,25 @@
     background-color: #ffffff;
     border-style: none;
     cursor: pointer;
-}
 
-.amount_btn:hover {
-    background-color: #EDDEEB;
-    border-style: none;
-}
+    &:hover {
+        background-color: #EDDEEB;
+        border-style: none;
+    }
 
-.amount_btn:active {
+    &:active {
     background-color: #F3D0DB;
     border-style: none;
+    }
 }
 
 .search-form_button {
     display: flex;
-    margin-top: 80px;
-    margin-left: 62px;
     align-items: center;
     justify-content: center;
+    margin-top: 80px;
+    margin-left: 62px;
     width: 95px;
     height: 40px;
     padding: 9px 22px 9px 22px;
-    background-color: #000000;
-    border-style: none;
-    cursor: pointer;
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 22px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    text-transform: uppercase;
-    color: #FFFFFF;
-}
-
-.search-form_button:hover {
-    background-color: #C29974;
-    border-style: none;
-}
-
-.search-form_button:active {
-    background-color: #CFAF91;
-    border-style: none;
-}
-
-.search-form_button:disabled {
-    background-color: #C7C1C1;
-    border-style: none;
 }

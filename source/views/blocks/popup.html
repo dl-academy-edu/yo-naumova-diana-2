@@ -29,7 +29,10 @@
                         of your personal data
                     </label>
                 </div>
-                <button type="submit" class="form_button" aria-label="Send a massege">Submit</button>
+                @@include('blocks/button.html',{
+                    'class': "form_button",
+                    'aria-label': "Send a message",
+                    'buttonName': "SUBMIT"})
             </div>
         </form>
         <button type="button" class="close" aria-label="Close popup"></button>

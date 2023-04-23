@@ -2,10 +2,6 @@
     display: block;
 }
 
-.search_line {
-    display: block;
-}
-
 .page_title {
     display: flex;
     margin-top: 57px;
@@ -20,33 +16,33 @@
 
 /* bread crumbs */
 
-.search_line_list {
-    display: flex;
-    margin-left: -38px;
-    margin-top: -13px;
-    column-gap: 14px;
-    border-top: 30px;
-}
+.search_line {
+    display: block;
 
-.search_line_list-item {
-    display: flex;
-}
-
-.search_line_list-link {
-    font-family: 'Crimson Text';
-    font-style: italic;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 26px;
-    color: #1E0606;
-}
-
-.search_line_list-link:hover {
-    opacity: 0.5;
-}
-
-.search_line_list-link:active {
-    opacity: 0.2;
+    &_list {
+        display: flex;
+        margin-left: -38px;
+        margin-top: -13px;
+        column-gap: 14px;
+        border-top: 30px;
+    
+        &-link {
+            font-family: 'Crimson Text';
+            font-style: italic;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 26px;
+            color: #1E0606;
+        
+            &:hover {
+                opacity: 0.5;
+            }
+            
+            &:active {
+                opacity: 0.2;
+            }
+        }
+    }
 }
 
 .search_line_button-ahead {
@@ -58,32 +54,59 @@
 
 .cards {
     display: block;
-}
 
-.cards_wrapper {
-    display: flex;
-    margin-left: -42px;
-}
+    &_wrapper {
+        display: flex;
+        margin-left: -42px;
+    }
 
-.cards_list {
-    display: flex;
-    margin-top: 60px;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
+    &_list {
+        display: flex;
+        margin-top: 60px;
+        flex-wrap: wrap;
+        justify-content: space-around;
 
-.cards_list-link {
-    display: flex;
-    margin-top: 30px;
-    justify-content: center;
-    text-align: center;
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 19px;
-    text-align: center;
-    color: #1E0606;
+        &-link {
+            display: flex;
+            margin-top: 30px;
+            justify-content: center;
+            text-align: center;
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 19px;
+            text-align: center;
+            color: #1E0606;
+        }
+        &-info {
+            display: flex;
+            position: absolute;
+            align-items: center;
+            justify-content: center;
+            margin-top: -426px;
+            margin-left: 85px;
+            opacity: 0;
+            background-color: #E5EAF8;
+            width: 207px;
+            height: 207px;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 26px;
+            line-height: 29px;
+            text-align: center;
+            text-transform: uppercase; 
+            color: #1E0606;
+            cursor: pointer;
+            &:hover {
+                opacity: 0.9;
+            }
+            &:active {
+                opacity: 0.7;
+            }
+        }
+    }
 }
 
 .cost {

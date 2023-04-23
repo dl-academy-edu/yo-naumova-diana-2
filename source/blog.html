@@ -27,57 +27,14 @@
             <section class="search_line container">
                 <h1 class="page_title">BLOG</h1>
                 <ul class="search_line_list">
-                    <li class="search_line_list-item"><a class="search_line_list-link" href="#">Home</a></li>
+                    <li class="search_line_list-item"><a class="search_line_list-link" href="/index.html">Home</a></li>
                     <li class="search_line_list-item"><button type="button" class="search_line_button-ahead"><img src="./img/icon/ahead.svg" alt="btn-ahead" width="8" height="12"></button>
                     </li>
-                    <li class="search_line_list-item"><a class="search_line_list-link" href="#">Blog</a></li>
+                    <li class="search_line_list-item"><a class="search_line_list-link" href="/blog.html">Blog</a></li>
                 </ul>
             </section>
             <div class="article container">
-                <article class="lego">
-                    <img src="./img/lego.jpg" alt="Lego">
-                    <p class="article_date"><time datetime="2018-08-23">23rd August 2018</time></p>
-                    <h2 class="article_title"><a class="article_title_link" href="#">Top 5 fastest growng it service companies in philly</a></h2>
-                    <p class="article_text">Direct Line Development's Team is excited to announce that we received UpCity's 2019 Local Excellence
-                        Award! This prestigious award is annually presented to the Top 1% of service providers in the given
-                        marketplace.</p>
-                </article>
-                <article class="panda">
-                    <img src="./img/panda.jpg" alt="Panda">
-                    <p class="article_date"><time datetime="2018-08-23">23rd August 2018</time></p>
-                    <h2 class="article_title"><a class="article_title_link" href="#">Best financial</a></h2>
-                    <p class="article_text">Direct Line Development is honored to be recognized as one of the Top 100 Fastest Growing Companies
-                        2019 in Philadelphia, according to Growjo's ranking.</p>
-                </article>
-                <article class="monkey">
-                    <img src="./img/monkey.jpg" alt="Monkey">
-                    <p class="article_date"><time datetime="2018-08-23">23rd August 2018</time></p>
-                    <h2 class="article_title"><a class="article_title_link" href="#">Company logo or brand identity: which one is more important? brand identity</a></h2>
-                    <p class="article_text">To survive in the world of digital marketing, you need to keep up with the latest SEO trends. Here
-                        are our simple, but effective, SEO tips for small business success.</p>
-                </article>
-                <article class="buzz">
-                    <img src="./img/buzz.jpg" alt="Buzz">
-                    <p class="article_date"><time datetime="2018-08-23">23rd August 2018</time></p>
-                    <h2 class="article_title"><a class="article_title_link" href="#">Best financial</a></h2>
-                    <p class="article_text">Direct Line Development is honored to be recognized as one of the Top 100 Fastest Growing Companies
-                        2019 in Philadelphia, according to Growjo's ranking.</p>
-                </article>
-                <article class="rapunzel">
-                    <img src="./img/rapunzel.jpg" alt="Rapunzel">
-                    <p class="article_date"><time datetime="2018-08-23">23rd August 2018</time></p>
-                    <h2 class="article_title"><a class="article_title_link" href="#">Company logo or brand identity: which one is more important? brand identity</a></h2>
-                    <p class="article_text">To survive in the world of digital marketing, you need to keep up with the latest SEO trends. Here
-                        are our simple, but effective, SEO tips for small business success.</p>
-                </article>
-                <article class="dice">
-                    <img src="./img/dice.jpg" alt="Lego">
-                    <p class="article_date"><time datetime="2018-08-23">23rd August 2018</time></p>
-                    <h2 class="article_title"><a class="article_title_link" href="#">Top 5 fastest growng it service companies in philly</a></h2>
-                    <p class="article_text">Direct Line Development's Team is excited to announce that we received UpCity's 2019 Local Excellence
-                        Award! This prestigious award is annually presented to the Top 1% of service providers in the given
-                        marketplace.</p>
-                </article>
+                @@include('blocks/article.html')
             </div>
             @@include('blocks/pagination.html')
         </main>
