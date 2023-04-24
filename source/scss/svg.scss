@@ -1,0 +1,62 @@
+.svg_wrapper {
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 500px;
+}
+
+.land {
+    display: flex;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: -50px;
+}
+
+.sun_second{
+    animation: sun 5s ease-in-out forwards infinite;
+    transform: translateX(0px);
+}
+
+@keyframes sun {
+    0% {
+        transform: translateX(0px);
+    }
+    25% {
+        transform: translate(25px,-6px);
+    }
+    50% {
+        transform: translate(50px,-12px);
+    }
+    
+    75% {
+        transform: translateX(75px,6px);
+    }
+    
+    100% {
+        transform: translateX(110px);
+    }
+}
+
+.smallpyro_second_pic{
+    animation: smallpyro 5s ease-in infinite;
+    fill: #545C66;
+}
+
+@keyframes smallpyro {
+    0% {
+        fill: #545C66;
+    }
+    25% {
+        fill: #646e7a;
+    }
+    50% {
+        fill: #7b8491;
+    }
+    
+    75% {
+        fill: #646e7a;
+    }
+
+    100% {
+        fill: #545C66;
+    }
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="google" content="notranslate">
+        <meta name="format-detection" content="telephone=no">
+
+        <title>Catalog</title>
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+
+        <script>
+        var docElement = document.documentElement;
+        docElement.className = docElement.className.replace(/\bno-js\b/, '') + ' js';
+        </script>
+
+        <!-- Favicon -->
+
+        <!-- build:css -->
+        <link href="css/style.min.css" rel="stylesheet">
+        <!-- endbuild -->
+    </head>
+    <body>
+        @@include('blocks/header.html')
+        <main class="catalog">
+            <section class="search_line container">
+                <h1 class="page_title">CATEGORY PRODUCTS</h1>
+                <ul class="search_line_list">
+                    <li class="search_line_list-item"><a class="search_line_list-link" href="/index.html">Home</a></li>
+                    <li class="search_line_list-item"><button type="button" class="search_line_button-ahead"><img src="./img/icon/ahead.svg" alt="btn-ahead" width="8" height="12"></button>
+                    </li>
+                    <li class="search_line_list-item"><a class="search_line_list-link" href="/catalog.html">Catalog</a></li>
+                </ul>
+            </section>
+            <div class="category products container">
+                <div class="category_wrapper">
+                    <ul class="catalog_categories_list">
+                        @@include('blocks/category.html',{
+                            'img': "./img/shirt.jpg",
+                            'name': "APPAREL KIDS",
+                            'className': "categories_list-link",
+                            'page': "#"
+                        })
+                        @@include('blocks/category.html',{
+                            'img': "./img/sock.jpg",
+                            'page': "#",
+                            'className': "categories_list-link",
+                            'name': "HOLIDAY SHOP"
+                        })
+                        @@include('blocks/category.html',{
+                            'img': "./img/deer.jpg",
+                            'page': "./toys.html",
+                            'className': "categories_list-link",
+                            'name': "TOYS",
+                        })
+                    </ul>
+                    <ul class="categories_sublist">
+                        @@include('blocks/category.html',{
+                            'img': "./img/yeti.jpg",
+                            'page': "#",
+                            'className': "categories_sublist-link",
+                            'name':"ACCESSORIES"
+                        })
+                        @@include('blocks/category.html',{
+                            'img': "./img/flamingo.jpg",
+                            'page': "#",
+                            'className': "categories_sublist-link",
+                            'name':"SALE"
+                        })
+                        @@include('blocks/category.html',{
+                            'img': "./img/blouse.jpg",
+                            'page': "#",
+                            'className': "categories_sublist-link",
+                            'name':"APPAREL ADULTS"
+                        })
+                    </ul>
+                </div>
+            </div>
+            <section class="product_desc container">
+                @@include('blocks/title.html',{
+                    'class': "product_desc-title",
+                    'title': "PRODUCT DESCRIPTION"})
+                <p class="product_desc-text">
+                    Interactive doll Zapf Creation Baby Born Sister can drink from a bottle and almost really cry. You can
+                    even bathe her, just like a little sister.
+                </p>
+                <p class="product_desc-text"> A toy with a height of 43 cm bends its knees, the head rotates, it can stand upright. Such a doll will
+                    be an excellent choice for a gift for a girl from 4 years old.</p>
+                <p class="product_desc-text">The set includes a miniature set of fashionable clothes, a hairbrush, a bottle for water, a pair of
+                    hairpins and elastic bands for hair, as well as two bracelets: one for the doll, the other for her young
+                    mistress.</p>
+            </section>
+        </main>
+        @@include('blocks/footer.html')
+
+        <script src="js/app.js" defer></script>
+    </body>
+</html>

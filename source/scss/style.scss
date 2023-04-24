@@ -16,8 +16,23 @@
   Import all other blocks
 */
 @import "_blocks/container";
+@import "_fonts";
+@import "_blocks/header";
 @import "_blocks/footer";
-
+@import "_blocks/popup";
+@import "_blocks/link";
+@import "_blocks/button";
+@import "_blocks/title";
+@import "_blocks/category";
+@import "_blocks/sub-category";
+@import "_blocks/search-form";
+@import "_blocks/pagination";
+@import "_blocks/article";
+@import "catalog";
+@import "toys";
+@import "blog";
+@import "contact";
+@import "svg";
 /*
   Ниже пример подключения других блоков
 
@@ -35,26 +50,325 @@
   то он должен был бы быть в файле _blocks/coming-soon.scss
 */
 
-.coming-soon {
-  color: $color-text;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  min-height: calc(100vh - 100px);
-  margin: auto;
-  padding: 0 5vw;
+/* banner style */
 
-  &__title {
+.banner {
+  display: block;
+
+  &_wrapper {
+    margin-top: 124px;
+    height: 382px;
+    background-color: #eee4db;
+  }
+
+  &_list {
+    display: flex;
+    flex-direction: column;
+    column-gap: 11px;
+    margin-left: -12px;
+
+    &-number {
+      display: flex;
+      column-gap: 10px;
+      margin-top: 17px;
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 200;
+      font-size: 60px;
+      line-height: 73px;
+      color:#1e06060d;
+    }
+
+    &-button {
+      display: flex;
+      margin-top: 10px;
+      margin-left: 3px;
+      padding: 2px;
+      width: 31px;
+      background-color: #d6cac2;
+      border-style: none;
+      cursor: pointer;
+      transition: background-color 0.7s;
+  
+      &:hover {
+        background-color: #725F5B;
+      }
+  
+      &:active {
+        background-color: #725F5B;
+      }
+    }
+  }
+
+  &_content-list {
+    display: block;
+  }
+
+  &_content-title {
+    display: flex;
+    margin-top: -70px;
+    margin-left: 93px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 44px;
+    color: #1e0606;
+    width: 307px;
+  }
+
+  &_text {
+    display: flex;
+    margin-left: 94px;
+    margin-top: -9px;
+    font-family:'Crimson Text';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #1e0606;
+  }
+
+  &_button {
     display: flex;
     align-items: center;
-    flex-direction: row;
-    justify-content: space-between;
-    font-size: 25vw;
-    font-weight: 400;
-    margin: 0 auto;
+    margin-left: 94px;
+    margin-top: 21px;
+    width: 161px;
+    height: 40px;
+    padding: 7px 20px 7px 20px;
+  }
+
+  &_pic {
+    display: flex;
+    position: absolute;
+    margin-left: 405px;
+    margin-top: -373px;
+  }
+
+  &_subtext {
+    display: flex;
+    justify-content: center;
+    margin-top: -10px;
+    padding: 12px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
     text-transform: uppercase;
-    width: 100%;
+    color: #ffffff;
+    background-color: #c29974;
+    position: relative;
+  }
+}
+
+/* category style-/views/category */
+
+
+/* delivery style */
+
+.delivery {
+  display: flex;
+  margin-top: 78px;
+
+  &_pic {
+    display: flex;
+    margin-top: 7px;
+  }
+
+  &_list {
+    display: flex;
+    margin-left: 23px;
+    margin-top: 40px;
+    justify-content: center;
+    flex-direction: column;
+
+    &-main {
+      display: flex;
+      margin-right: 215px;
+      margin-left: -4px;
+      padding: 11px 62px;
+      background-color: #70bbdc33;
+    }
+
+    &-item {
+      display: flex;
+      margin-top: 18px;
+      margin-left: 58px;
+    }
+
+    &-link {
+      font-family: 'Crimson Text';
+      font-style: italic;
+      font-weight: 400;
+      font-size: 26px;
+      line-height: 34px;
+      color: #1E0606; 
+    }
+  }
+
+  &_title {
+    display: flex;
+    margin-left: 58px;
+    margin-top: -30px;
+    margin-bottom: 1px;
+  }
+
+  &_link-main {
+    font-family: 'Crimson Text';
+    font-style: italic;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 34px;
+    color: #1E0606;
+  }
+
+  &_text-first {
+    display: flex;
+    margin-top: 15px;
+    margin-left: 58px;
+    width: 480px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #1E0606;
+  }
+
+  &_text-second {
+    display: flex;
+    margin-top: -15px;
+    margin-left: 58px;
+    width: 480px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #1E0606;
+  }
+
+  &_button {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+    margin-left: 57px;
+    width: 150px;
+    height: 40px;
+    padding: 9px 21px 9px 21px;
+  }
+}
+
+/* companies style */
+
+.companies {
+  display: block;
+  margin-top: 99px;
+
+  &_list {
+    display: flex;
+    align-items: center;
+    margin-left: -40px;
+    column-gap: 127px;
+  }
+}
+
+/* about us style */
+
+.about_us {
+  display: flex;
+  column-gap: 57px;
+  margin-top: 113px;
+
+  &_list {
+    display: flex;
+    margin-top: -6px;
+    flex-direction: column;
+    background-color: #E1F0F7;
+    max-width: 543px;
+    margin-bottom: 52px;
+  }
+  &_title {
+    display: flex;
+    position: absolute;
+    margin-top: -24px;
+    margin-left: -10px;
+  }
+  &_subtitle {
+    display: flex;
+    margin-top: 31px;
+    margin-left: -11px;
+    font-family: 'Crimson Text';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 34px;
+    color: #1E0606;
+  }
+  &_text {
+    display: flex;
+    margin-top: -15px;
+    margin-left: -11px;
+    margin-right: 30px;
+    width: 483px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #1E0606;
+  }
+  &_button {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 27px;
+    margin-left: -10px;
+    width: 124px;
+    height: 40px;
+    padding: 8px 21px 8px 21px;
+  }
+}
+
+/* contacts style */
+
+.contacts_list {
+  display: flex;
+  flex-direction: column;
+  margin-top: -4px;
+  background-color: #E1F0F7;
+  max-width: 543px;
+  height: 208px;
+  margin-bottom: 55px;
+ 
+  &-title {
+    display: flex;
+    position: absolute;
+    margin-top: -26px;
+    margin-left: -11px;
+  }
+
+  &-text {
+    display: flex;
+    margin-top: 40px;
+    margin-left: -10px;
+    margin-right: 30px;
+    margin-bottom: 26px;
+    width: 483px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #1E0606;
+  }
+
+  &-map {
+    display: flex;
+    margin-top: 4px;
+    margin-left: -8px;
   }
 }

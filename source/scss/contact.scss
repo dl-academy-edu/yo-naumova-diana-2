@@ -1,0 +1,232 @@
+.page_title {
+    display: flex;
+    margin-top: 56px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 49px;
+    text-transform: uppercase;
+    color: #1E0606;
+}
+
+/* bread crumbs */
+
+.search_line {
+    display: block;
+
+    &_list {
+        display: flex;
+        margin-left: -38px;
+        margin-top: -12px;
+        column-gap: 14px;
+    
+        &-link {
+            font-family: 'Crimson Text';
+            font-style: italic;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 26px;
+            color: #1E0606;
+    
+            &:hover {
+                opacity: 0.5;
+            }
+    
+            &:active {
+                opacity: 0.2;
+            }
+        }
+    }
+
+    &_button-ahead {
+        border: none;
+        background-color: #ffffff;
+    }
+}
+
+/* form style */
+
+.contact_page {
+    display: flex;
+    margin-top: 50px;
+    column-gap: 119px;
+    margin-bottom: -33px;
+}
+
+.form_fields {
+    display: flex;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    background-color: #E5EAF8;
+}
+
+.form_inner-wr {
+    padding: 42px 40px 65px 40px;
+}
+
+.form_wrapper {
+    display: flex;
+}
+
+.form_wrapper-name {
+    display: flex;
+}
+
+.form_inner {
+    display: flex;
+    column-gap: 20px;
+}
+
+.form_label {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #1E0606;
+}
+
+.form_input-name {
+    display: flex;
+    margin-top: 3px;
+    margin-bottom: 20px;
+    width: 579px;
+    height: 50px;
+    padding: 0px 0px 0px 20px;
+    border: 1px solid #00000033;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #1E0606;
+}
+
+.form_input {
+    display: flex;
+    margin-top: 3px;
+    margin-bottom: 20px;
+    width: 248px;
+    height: 48px;
+    padding: 0px 20px 0px 20px;
+    border: 1px solid #00000033;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #1E0606;
+}
+
+.form_message {
+    display: flex;
+}
+
+.form_text-message {
+    display: flex;
+    margin-top: 3px;
+    margin-bottom: 22px;
+    resize: none;
+    padding: 0px 20px 0px 20px;
+    width: 558px;
+    height: 150px;
+    border: 1px solid #00000033;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #1E0606;
+}
+
+/* consent style */
+
+.form_label-consent {
+    display: flex;
+    column-gap: 16px;
+    margin-bottom: 20px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #1E0606;
+}
+
+/* checkbox consent */
+
+.form_consent {
+    position: absolute;
+    margin-left: 0;
+    padding: 0;
+    appearance: none;
+}
+
+.form_label-consent::before {
+    content: "";
+    cursor: pointer;
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    background-image: url("/img/checkbox.svg");
+}
+
+.form_consent:checked + .form_label-consent::before {
+    content: "";
+    cursor: pointer;
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    background-image: url("/img/checked.svg");
+}
+
+.form_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -32px;
+    width: 106px;
+    height: 40px;
+    padding: 9px 22px 9px 22px;
+}
+
+/* support style */
+
+.support {
+    display: flex;
+    width: 380px;
+
+    &_list {
+        display: flex;
+        flex-direction: column;
+        margin-top: -6px;
+        margin-left: -38px;
+    }
+
+    &_text {
+        display: flex;
+        margin-top: 4px;
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        color: #1E0606;
+    }
+    
+    &_title {
+        display: flex;
+        margin-top: 4px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 34px;
+        text-transform: uppercase;
+        color: #C29974;
+    }
+}

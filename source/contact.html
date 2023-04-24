@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en" class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="google" content="notranslate">
+        <meta name="format-detection" content="telephone=no">
+
+        <title>Contact</title>
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+
+        <script>
+        var docElement = document.documentElement;
+        docElement.className = docElement.className.replace(/\bno-js\b/, '') + ' js';
+        </script>
+
+        <!-- Favicon -->
+
+        <!-- build:css -->
+        <link href="css/style.min.css" rel="stylesheet">
+        <!-- endbuild -->
+    </head>
+    <body>
+        @@include('blocks/header.html')
+        <main class="contact">
+            <section class="search_line container">
+                <h1 class="page_title">CONTACT US</h1>
+                <ul class="search_line_list">
+                    <li class="search_line_list-item"><a class="search_line_list-link" href="/index.html">Home</a></li>
+                    <li class="search_line_list-item"><button type="button" class="search_line_button-ahead"><img src="/img/icon/ahead.svg" alt="btn-ahead" width="8" height="12"></button>
+                    </li>
+                    <li class="search_line_list-item"><a class="search_line_list-link" href="/contact.html">Contact Us</a></li>
+                </ul>
+            </section>
+            <div class="contact_page container">
+                <div class="form_fields">
+                    <form action="#" class="form">
+                        <div class="form_inner-wr">
+                            <div class="form_wrapper-name">
+                                <label for="name" class="form_label">Name
+                                    <input type="text" id="name" class="form_input-name" placeholder="Ivan Ivanov">
+                                </label>
+                            </div>
+                            <div class="form_wrapper">
+                                <div class="form_inner">
+                                    <label for="phone" class="form_label">Phone
+                                        <input type="tel" id="phone" class="form_input">
+                                    </label>
+                                    <label for="email" class="form_label">Email
+                                        <input type="email" id="email" class="form_input">
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form_message">
+                                <label for="message" class="form_label">Message
+                                    <textarea class="form_text-message" id="message" cols="30" rows="10"></textarea>
+                                </label>
+                            </div>
+                            <div class="consent_wrapper">
+                                <input type="checkbox" id="consent" class="form_consent">
+                                <label for="consent" class="form_label-consent">By clicking on the button, you consent to the processing
+                                        of your personal data
+                                </label>
+                            </div>
+                            @@include('blocks/button.html',{
+                                'class': "form_button",
+                                'aria-label': "Send a message",
+                                'buttonName': "SUBMIT"})
+                        </div>
+                    </form>
+                </div>
+                <div class="support">
+                    <ul class="support_list">
+                        <li><p class="support_text">Our support team are on-hand to assist with any issues you are experiencing.</p></li>
+                        <li><p class="support_text">Please use the form to contact us with your needs. Send us a message and we'll respond as soon as
+                            possible.</p></li>
+                        <li><h2 class="support_title">An expert is waiting to help you!</h2></li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+        @@include('blocks/footer.html')
+
+        <script src="js/app.js" defer></script>
+    </body>
+</html>
