@@ -1,0 +1,290 @@
+/* bread crumbs */
+
+.search_line {
+    display: block;
+
+    &_list {
+        display: flex;
+        margin-left: -39px;
+        margin-top: -13px;
+        margin-bottom: 50px;
+        column-gap: 15px;
+        border-top: 30px;
+    
+        &-link {
+            font-family: 'Crimson Text';
+            font-style: italic;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 26px;
+            color: #1E0606;
+    
+            &:hover {
+                opacity: 0.5;
+            }
+    
+            &:active {
+                opacity: 0.2;
+            }
+        }
+    }
+
+    &_button-ahead {
+        border: none;
+        background-color: #ffffff;
+    }
+}
+
+/* animation */
+
+.scene {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1400px;
+    height: 768px;
+    overflow: hidden;
+}
+
+.scene_pic {
+    display: flex;
+    // margin-left: 80px;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.city {
+    position: absolute;
+    top: 484px;
+    left: -20px;
+}
+
+.sky{
+    position: absolute;
+    top: 350px;
+    left: 150px;
+}
+
+.first_bg_lantern{
+    position: absolute;
+    top: 520px;
+    left: 510px;
+}
+
+.second_bg_lantern{
+    position: absolute;
+    top: 520px;
+    left: 1380px;
+}
+
+.first_car{
+    position: absolute;
+    top: 775px;
+    left: 15px;
+    animation: first_car 4s ease-in paused;
+}
+
+@keyframes first_car {
+    0% {
+        transform: translate(0px);
+    }
+
+    100% {
+        transform: translate(1550px);
+    }
+}
+
+.second_car{
+    position: absolute;
+    top: 780px;
+    left: 405px;
+    animation: second_car 3s ease-in paused;
+}
+
+@keyframes second_car {
+    0% {
+        transform: translate(0px);
+    }
+
+    100% {
+        transform: translate(1500px);
+    }
+}
+
+.third_car{
+    position: absolute;
+    top: 795px;
+    left: 700px;
+    animation: third_car 2s ease-in paused;
+}
+
+@keyframes third_car {
+    0% {
+        transform: translate(0px);
+    }
+
+    100% {
+        transform: translate(750px);
+    }
+}
+
+.fourth_car{
+    position: absolute;
+    top: 758px;
+    left: 1250px;
+    animation: fourth_car 3s ease-in paused;
+}
+
+@keyframes fourth_car {
+    0% {
+        transform: translate(0px);
+    }
+
+    100% {
+        transform: translate(300px);
+    }
+}
+
+.taxi{
+    position: absolute;
+    top: 750px;
+    left: 1400px;
+    animation: taxi 8s ease-in-out forwards infinite;
+}
+
+@keyframes taxi {
+    0% {
+        transform: translate(0px);
+    }
+
+    50% {
+        transform: translate(-1000px);
+    }
+
+    60% {
+        transform: translate(-1000px);
+    }
+
+    100% {
+        transform: translate(-2500px);
+    }
+}
+
+.lantern{
+    position: absolute;
+    top: 510px;
+    left: 1125px;
+}
+
+.woman{
+    position: absolute;
+    top: 803px;
+    left: 255px;
+}
+
+.man{
+    position: absolute;
+    top: 678px;
+    left: 370px;
+}
+
+.suitcases {
+    position: absolute;
+    top: 975px;
+    left: 245px;
+}
+
+.message_woman {
+    position: absolute;
+    top: 705px;
+    left: 170px;
+    animation: message_woman 7s ease-in-out infinite;
+    transition: opacity 2s;
+}
+
+@keyframes message_woman {
+    0% {
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    60% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.message_man {
+    position: absolute;
+    top: 640px;
+    left: 355px;
+    animation: message_man 7s ease-in-out infinite;
+    transition: opacity 2s;
+}
+
+@keyframes message_man {
+    0% {
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    60% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.message_taxi {
+    position: absolute;
+    top: 705px;
+    left: 1720px;
+    animation: message_taxi 8s ease-in-out infinite;
+    transition: opacity 3s;
+}
+
+@keyframes message_taxi {
+    0% {
+        opacity: 0;
+        transform: translate(0px);
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+        transform: translate(-1000px);
+    }
+
+    60% {
+        opacity: 1;
+        transform: translate(-1000px);
+    }
+
+
+    100% {
+        opacity: 0;
+        transform: translate(-2500px);
+    }
+}

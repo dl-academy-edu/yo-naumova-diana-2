@@ -3,6 +3,9 @@
 .header {
     display: flex;
     align-items: center;
+    @media screen and (max-width: 768px) {
+        margin-left: 40px;
+    }
 
     &_list {
         display: flex;
@@ -11,7 +14,21 @@
         margin-top: 60px;
         align-items: center;
         column-gap: 20px;
-    
+
+        &-item {
+            @media screen and (max-width: 768px) {
+                display: none;
+            }
+            &-menu {
+                display: none;
+                @media screen and (max-width: 768px) {
+                    display: flex;
+                    justify-content: center;
+                    margin-left: 360px;
+                }
+            }
+        }
+
         &-link {
             width: max-content;
             font-family: 'Open Sans';
@@ -24,7 +41,7 @@
             text-transform: uppercase;
             color: #1E0606;
             transition: opacity 0.7s;
-        
+
             &:hover {
                 opacity: 0.5;
             }
@@ -41,6 +58,17 @@
         margin-top: 60px;
         align-items: center;
         column-gap: 23px;
+        @media screen and (max-width: 768px) {
+            margin-left: 420px;
+        }
+
+        &-item {
+            &-contacts {
+                @media screen and (max-width: 768px) {
+                    display: none;
+                }
+            }
+        }
 
         &-link {
             font-family: 'Open Sans';

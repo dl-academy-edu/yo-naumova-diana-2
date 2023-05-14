@@ -10,6 +10,9 @@
   justify-content: center;
   margin-left: -40px;
   margin-top: 100px;
+  @media screen and (max-width: 768px) {
+    margin-left: -30px;
+  }
 
   &_list {
     display: flex;
@@ -21,6 +24,9 @@
     font-size: 16px;
     line-height: 22px;
     color: #AAAAAA;
+    @media screen and (max-width: 768px) {
+      margin-top: 80px;
+    }
 
     &-item {
       display: flex;
@@ -29,10 +35,12 @@
       border-bottom-width: 1px;
       border-bottom-style: solid;
       width: 380px;
+      @media screen and (max-width: 768px) {
+        width: 203px;
+      }
     }
   }
 }
-
 
 .wrapper {
   display: flex;
@@ -41,6 +49,10 @@
   margin-left: -269px;
   margin-top: -20px;
   column-gap: 203px;
+  @media screen and (max-width: 768px) {
+    margin-left: -80px;
+    column-gap: 25px;
+  }
 }
 
 .navigation_list-item {
@@ -99,6 +111,9 @@
   margin-left: -624px;
   margin-top: -20px;
   column-gap: 9px;
+  @media screen and (max-width: 768px) {
+    margin-left: -265px;
+  }
 
   &-item {
     display: flex;
@@ -133,6 +148,10 @@
   font-size: 16px;
   line-height: 22px;
   color: #EBEBEB;
+  @media screen and (max-width: 768px) {
+    width: 117px;
+    margin-left: 55px;
+  }
 
   &:hover {
     border-width: 1px;
@@ -153,6 +172,9 @@
   width: 81px;
   height: 40px;
   padding: 8px 21px;
+  @media screen and (max-width: 768px) {
+    margin-left: 170px;
+  }
 }
 
 /* last information - rating,developer */
@@ -167,6 +189,11 @@
   border-top: #666666;
   border-top-width: 1px;
   border-top-style: solid;
+  @media screen and (max-width: 768px) {
+    margin-left: 65px;
+    width: 645px;
+    flex-wrap: wrap;
+  }
 
   &_list {
     display: flex;
@@ -174,9 +201,14 @@
     margin-left: 51px;
     margin-right: 57px;
     column-gap: 77px;
+    @media screen and (max-width: 768px) {
+      margin-left: 35px;
+      flex-wrap: wrap;
+    }
   
     &-item {
       display: flex;
+      align-items: center;
       margin-left: 198px;
       margin-top: 23px;
       margin-bottom: 100px;
@@ -185,9 +217,19 @@
       font-weight: 400;
       font-size: 16px;
       line-height: 22px;
-      align-items: center;
       color: #FFFFFF;
+      @media screen and (max-width: 768px) {
+        margin-left: 10px;
+      }
     }
+  }
+}
+
+.copyright {
+  @media screen and (max-width: 768px) {
+  display: flex;
+  margin-left: -20px;
+  margin-top: -80px;
   }
 }
 
@@ -195,6 +237,10 @@
   display: flex;
   margin-left: -122px;
   transition: color 0.7s;
+  @media screen and (max-width: 768px) {
+    margin-left: -20px;
+    margin-right: 178px;
+  }
 
   &:hover {
     color: #C29974;
@@ -288,16 +334,20 @@
 
 .web_design-link {
   display: flex;
+  align-items: center;
   margin-left: -162px;
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
-  display: flex;
-  align-items: center;
   color: #A2A2A2;
   transition: text-decoration 0.7s;
+  @media screen and (max-width: 768px) {
+    margin-left: 300px;
+    margin-top: -264px;
+    width: 313px;
+  }
 
   &:hover {
     text-decoration-line: underline;
