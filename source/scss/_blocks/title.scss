@@ -6,4 +6,8 @@
     line-height: 46px;
     text-transform: uppercase;
     color: #1E0606;
+    @media screen and (max-width: 768px) {
+        font-size: 36px;
+        line-height: 44px;
+    }
 }

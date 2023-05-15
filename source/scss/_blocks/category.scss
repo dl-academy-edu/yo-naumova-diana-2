@@ -1,9 +1,17 @@
 .categories {
   display: block;
+  @media screen and (max-width: 768px) {
+    margin-left: 40px;
+    width: 768px;
+    overflow-x: unset;
+  }
   
   &_title {
     display: flex;
     margin-top: 92px;
+    @media screen and (max-width: 768px) {
+       margin-top: 40px;
+    }
   }
   
   &_list {
@@ -59,6 +67,11 @@
     line-height: 22px;
     width: 678px;
     color: #1E0606;
+    @media screen and (max-width: 768px) {
+      font-size: 14px;
+      line-height: 19px;
+      width: 700px;
+    }
   }
 
   &_button-back {
@@ -90,22 +103,38 @@
   background-color: #DBE4DB; 
   width: 280px;
   height: 270px;
+  @media screen and (max-width: 768px) {
+    width: 258px;
+    height: 248px;
   }
+}
   
 .sock_pic {
   background-color: #EADDD3; 
   width: 280px;
   height: 270px;
+  @media screen and (max-width: 768px) {
+    width: 258px;
+    height: 248px;
+  }
 }
 
 .deer_pic {
   background-color: #F8F2DA; 
   width: 280px;
   height: 270px;
+  @media screen and (max-width: 768px) {
+    width: 258px;
+    height: 248px;
+  }
 }
 
 .yeti_pic {
   background-color: #D5D4E1; 
   width: 280px;
   height: 270px;
+  @media screen and (max-width: 768px) {
+    width: 258px;
+    height: 248px;
+  }
 }
