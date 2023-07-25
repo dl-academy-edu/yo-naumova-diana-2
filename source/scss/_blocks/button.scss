@@ -12,6 +12,10 @@
     border-style: none;
     cursor: pointer;
     transition: background-color 0.4s;
+    @media screen and (max-width: 376px) {
+        font-size: 14px;
+        line-height: 19px;
+      }
 
     &:hover {
         background-color: #C29974;

@@ -15,6 +15,12 @@
   margin-top: 49px;
   margin-left: -35px;
   z-index: 3;
+  @media screen and (max-width: 768px) {
+    margin-left: -175px;
+  }
+  @media screen and (max-width: 376px) {
+    margin-left: -86px;
+  }
 }
 
 .popup {
@@ -38,6 +44,14 @@
   background: none;
   cursor: pointer;
   background-image: url("/img/close_btn.svg");
+  @media screen and (max-width: 768px) {
+    margin-top: -17px;
+    margin-left: -15px;
+  }
+  @media screen and (max-width: 376px) {
+    margin-top: -655px;
+    margin-left: -15px;
+  }
 }
 
 .close:hover {
@@ -51,16 +65,24 @@
 
 .form_fields {
   display: flex;
-}
-
-.contact_form {
-  display: flex;
-  flex-direction: column;
-  background-color: #E5EAF8;
+  @media screen and (max-width: 768px) {
+  margin-bottom: -40px;
+  }
 }
 
 .form_inner-wr {
+  display: flex;
+  flex-direction: column;
+  background-color: #E5EAF8;
   padding: 42px 40px 65px 40px;
+  @media screen and (max-width: 768px) {
+      padding: 42px 50px 75px 60px;
+      margin-left: -5px;
+  }
+  @media screen and (max-width: 376px) {
+      padding: 42px 13px 75px 23px;
+
+  }
 }
 
 .form_wrapper {
@@ -69,11 +91,17 @@
 
 .form_wrapper-name {
   display: flex;
+  @media screen and (max-width: 376px) {
+      // margin-left: 150px;
+  }
 }
 
 .form_inner {
   display: flex;
   column-gap: 20px;
+  @media screen and (max-width: 376px) {
+      flex-direction: column;
+  }
 }
 
 .form_label {
@@ -97,15 +125,27 @@
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
-  line-height: 25px;
+  line-height: 21px;
   color: #1E0606;
+  @media screen and (max-width: 768px) {
+      width: 536px;
+      height: 50px;
+      font-size: 16px;
+      line-height: 19px;
+  }
+  @media screen and (max-width: 376px) {
+      width: 285px;
+      height: 40px;
+      font-size: 14px;
+      line-height: 16px;
+  }
 }
 
 .form_input {
   display: flex;
   margin-top: 3px;
   margin-bottom: 20px;
-  width: 248px;
+  width: 279px;
   height: 48px;
   padding: 0px 20px 0px 20px;
   border: 1px solid #00000033;
@@ -115,6 +155,14 @@
   font-size: 18px;
   line-height: 25px;
   color: #1E0606;
+  @media screen and (max-width: 768px) {
+      width: 258px;
+      height: 48px;
+  }
+  @media screen and (max-width: 376px) {
+      width: 285px;
+      height: 40px;
+  }
 }
 
 .form_message {
@@ -127,7 +175,7 @@
   margin-bottom: 22px;
   resize: none;
   padding: 0px 20px 0px 20px;
-  width: 558px;
+  width: 579px;
   height: 150px;
   border: 1px solid #00000033;
   font-family: 'Open Sans';
@@ -136,6 +184,14 @@
   font-size: 18px;
   line-height: 25px;
   color: #1E0606;
+  @media screen and (max-width: 768px) {
+      width: 536px;
+      height: 150px;
+  }
+  @media screen and (max-width: 376px) {
+      width: 285px;
+      height: 150px;
+  }
 }
 
 /* consent style */
@@ -148,8 +204,15 @@
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 19px;
+  line-height: 16px;
   color: #1E0606;
+  @media screen and (max-width: 768px) {
+      column-gap: 10px;
+      margin-right: 10px;
+  }
+  @media screen and (max-width: 376px) {
+      width: 280px;
+  }
 }
 
 /* checkbox consent */
@@ -168,6 +231,9 @@
   width: 19px;
   height: 19px;
   background-image: url("/img/checkbox.svg");
+  @media screen and (max-width: 376px) {
+      width: 39px;
+  }
 }
 
 .form_consent:checked + .form_label-consent::before {
@@ -177,13 +243,16 @@
   width: 19px;
   height: 19px;
   background-image: url("/img/checked.svg");
+  @media screen and (max-width: 376px) {
+      width: 39px;
+  }
 }
 
 .form_button {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: -22px;
+  margin-bottom: -32px;
   width: 106px;
   height: 40px;
   padding: 9px 22px 9px 22px;

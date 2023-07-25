@@ -26,12 +26,10 @@
         <main class="contact">
             <section class="search_line container">
                 <h1 class="page_title">CONTACT US</h1>
-                <ul class="search_line_list">
-                    <li class="search_line_list-item"><a class="search_line_list-link" href="/index.html">Home</a></li>
-                    <li class="search_line_list-item"><button type="button" class="search_line_button-ahead"><img src="/img/icon/ahead.svg" alt="btn-ahead" width="8" height="12"></button>
-                    </li>
-                    <li class="search_line_list-item"><a class="search_line_list-link" href="/contact.html">Contact Us</a></li>
-                </ul>
+                @@include('blocks/search-line.html',{
+                    'page': "/contact.html",
+                    'page-name': "Contacts"
+                })
             </section>
             <div class="contact_page container">
                 <div class="form_fields">

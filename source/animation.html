@@ -26,12 +26,10 @@
         <main class="animation">
             <section class="search_line container">
                 <h1 class="page_title">Animation Scene</h1>
-                <ul class="search_line_list">
-                    <li class="search_line_list-item"><a class="search_line_list-link" href="/index.html">Home</a></li>
-                    <li class="search_line_list-item"><button type="button" class="search_line_button-ahead"><img src="./img/icon/ahead.svg" alt="btn-ahead" width="8" height="12"></button>
-                    </li>
-                    <li class="search_line_list-item"><a class="search_line_list-link" href="/animation.html">Animation</a></li>
-                </ul>
+                @@include('blocks/search-line.html',{
+                    'page': "/animation.html",
+                    'page-name': "Animation"
+                })
             </section>
             <div class="scene">
                 <img class="scene_pic city" src="./img/animation_shots/city.jpg" alt="City" width="1585px" height="630px">

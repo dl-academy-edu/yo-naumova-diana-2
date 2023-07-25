@@ -35,6 +35,9 @@
     display: flex;
     margin-top: -10px;
     width: 380px;
+    @media screen and (max-width: 768px) {
+      width: 314px;
+    }
     &_link {
         font-family: 'Montserrat';
         font-style: normal;
@@ -55,5 +58,8 @@
     font-size: 18px;
     line-height: 25px;
     color: #1E0606;
+    @media screen and (max-width: 768px) {
+      width: 314px;
+    }
   }
 }

@@ -1,16 +1,20 @@
 .categories {
   display: block;
   @media screen and (max-width: 768px) {
-    margin-left: 40px;
+    margin-left: 20px;
     width: 768px;
     overflow-x: unset;
+  }
+  @media screen and (max-width: 376px) {
+    margin-left: -2px;
+    width: 375px;
   }
   
   &_title {
     display: flex;
     margin-top: 92px;
     @media screen and (max-width: 768px) {
-       margin-top: 40px;
+       margin-top: 20px;
     }
   }
   
@@ -19,6 +23,9 @@
     margin-top: 27px;
     margin-left: -40px;
     column-gap: 20px;
+    @media screen and (max-width: 376px) {
+      column-gap: 16px;
+    }
 
     &-item {
       display: flex;
@@ -72,6 +79,11 @@
       line-height: 19px;
       width: 700px;
     }
+    @media screen and (max-width: 376px) {
+      width: 410px;
+      margin-top: 27px;
+      margin-left: -40px;
+    }
   }
 
   &_button-back {
@@ -83,6 +95,11 @@
     height: 37px;
     border-style: none;
     cursor: pointer;
+    @media screen and (max-width: 376px) {
+      width: 33px;
+      height: 33px;
+      margin-top: -34px;
+    }
   }
 
   &_button-ahead {
@@ -96,6 +113,11 @@
     height: 37px;
     border-style: none;
     cursor: pointer;
+    @media screen and (max-width: 376px) {
+      width: 33px;
+      height: 33px;
+      margin-top: -34px;
+    }
   }
 }
 
@@ -107,6 +129,10 @@
     width: 258px;
     height: 248px;
   }
+  @media screen and (max-width: 376px) {
+    width: 247px;
+    height: 238px;
+  }
 }
   
 .sock_pic {
@@ -116,6 +142,10 @@
   @media screen and (max-width: 768px) {
     width: 258px;
     height: 248px;
+  }
+  @media screen and (max-width: 376px) {
+    width: 247px;
+    height: 238px;
   }
 }
 
@@ -127,6 +157,10 @@
     width: 258px;
     height: 248px;
   }
+  @media screen and (max-width: 376px) {
+    width: 247px;
+    height: 238px;
+  }
 }
 
 .yeti_pic {
@@ -136,5 +170,9 @@
   @media screen and (max-width: 768px) {
     width: 258px;
     height: 248px;
+  }
+  @media screen and (max-width: 376px) {
+    width: 247px;
+    height: 238px;
   }
 }

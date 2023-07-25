@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en" class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="google" content="notranslate">
+        <meta name="format-detection" content="telephone=no">
+
+        <title>Grid</title>
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+
+        <script>
+        var docElement = document.documentElement;
+        docElement.className = docElement.className.replace(/\bno-js\b/, '') + ' js';
+        </script>
+
+        <!-- Favicon -->
+
+        <!-- build:css -->
+        <link href="css/style.min.css" rel="stylesheet">
+        <!-- endbuild -->
+    </head>
+    <body>
+        @@include('blocks/header.html')
+        <main class="grid container">
+            <section class="search_line container">
+                <h1 class="page_title">Grid</h1>
+                @@include('blocks/search-line.html',{
+                    'page': "/grid.html",
+                    'page-name': "Grid"
+                })
+            </section>
+            <div class="grid_wrapper">
+                <div class="iphone">
+                    <ul class="iphone_list">
+                        <li class="iphone_list-item">
+                            <p class="iphone_list-text">IPHONE 6S</p>
+                        </li>
+                        <li class="iphone_list-item">
+                            <h2 class="iphone_list-title">3D Touch. 12MP photos. 4K video. One powerful phone</h2>
+                        </li>
+                        <li class="iphone_list-item"><a href="#" class="iphone_list-link">Learn more or visit an Apple Store today</a></li>
+                    </ul>
+                    <img src="./img/grid_pictures/phone.png" alt="Iphone"  class="phone_pic">
+                </div>
+                <div class="evaporator">
+                    <ul class="evaporator_list">
+                        <li class="evaporator_list-item"><a href="#" class="evaporator_list-link">Learn more</li>
+                        <li class="evaporator_list-item">
+                            <h2 class="evaporator_list-title">How to Use Rotary Evaporator in Chemical Labs</h2>
+                        </li>
+                        <li class="evaporator_list-item"><a href="#" class="evaporator_list-download">Download now</a></li>
+                    </ul>
+                </div>
+                <div class="keyboard">
+                    <ul class="keyboard_list">
+                        <li class="keyboard_list-item"><img src="./img/grid_pictures/keyboard.png" alt="Keyboard" class="keyboard_pic"></li>
+                        <li class="keyboard_list-item">
+                            <h2 class="keyboard_list-title">Our Brand New Keyboard</h2>
+                        </li>
+                        <li class="keyboard_list-item"><a href="#" class="keyboard_list-link">LEARN ›</a></li>
+                    </ul>
+                </div>
+                <div class="diskette_reader">
+                    <ul class="diskette_reader-list">
+                        <li class="diskette_reader-list-item">
+                            <p class="diskette_reader-text">IMAC.RETINA</p>
+                        </li>
+                        <li class="diskette_reader-list-item">
+                            <h2 class="diskette_reader-title">Hardly a month passes these days where</h2>
+                        </li>
+                        <li class="diskette_reader-list-item"><img src="./img/grid_pictures/diskette_reader.png"
+                                alt="Diskette-reader"  class="diskette_reader_pic"></li>
+                    </ul>
+                    <ul class="diskette_reader-info">
+                        <li class="diskette_reader-info-item">
+                            <p class="diskette_reader-info-text">Apple may be experimenting in the virtual reality space. The
+                                company has been granted a patent for a head-mounted virtual reality device that would use the
+                                iPhone screen as the display.</p>
+                        </li>
+                        <li class="diskette_reader-info-item"><a href="#" class="diskette_reader-info-download">DOWNLOAD NOW ›</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="icloud">
+                    <ul class="icloud_list">
+                        <li class="icloud_list-item"><img src="../img/grid_pictures/diskette.png" alt="iCloud-logo" class="diskette_pic"></li>
+                        <li class="icloud_list-item">
+                            <h2 class="icloud_list-title">iCloud</h2>
+                        </li>
+                        <li class="icloud_list-item">
+                            <p class="icloud_list-text">With iCloud, you always have the latest versions of your most important
+                                things — like documents, apps, notes, and contacts — on whatever device you’re using.</p>
+                        </li>
+                        <li class="icloud_list-item"><a href="#" class="icloud_list-link">LEARN MORE</a></li>
+                    </ul>
+                </div>
+                <div class="laptop">
+                    <ul class="laptop_list">
+                        <li class="laptop_list-item"><p class="laptop-text">BEST CHOICE</p></li>
+                        <li class="laptop_list-item"><h2 class="laptop_list-title">Much MuchBetter Experience</h2></li>
+                        <li class="laptop_list-item"><img src="../img/grid_pictures/laptop.png" alt="Laptop" class="laptop_pic"></li>
+                    </ul>
+                </div>
+                <div class="games">
+                    <ul class="games_list">
+                        <li class="games_list-item"><img src="./img/grid_pictures/gamepad.png" alt="Gamepad" class="gamepad_pic"></li>
+                        <li class="games_list-item"><h2 class="games_list-title">Games ourpasion</h2></li>
+                        <li class="games_list-item"><a href="#" class="games_list-link">LEARN ›</a></li>
+                    </ul>
+                </div>
+                <div class="instagram">
+                    <ul class="instagram_list">
+                        <li class="instagram_list-item"><img src="./img/grid_pictures/instagram_follow.svg" alt="Instagram-logo" class="instagram_follow_pic"></li>
+                        <li class="instagram_list-item"><a href="#" class="instagram_list-link">Follow me ›</a></li>
+                    </ul>
+                </div>
+                <div class="tv">
+                    <ul class="tv_list">
+                        <li class="tv_list-item"><img src="./img/grid_pictures/tv.png" alt="Tv" class="tv_pic"></li>
+                        <li class="tv_list-item"><h2 class="tv_list-title">More than just a display, it’s a vision</h2></li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+        @@include('blocks/footer.html')
+
+        <script src="js/app.js" defer></script>
+    </body>
+</html>

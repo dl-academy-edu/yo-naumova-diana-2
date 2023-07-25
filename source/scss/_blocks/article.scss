@@ -5,4 +5,9 @@
     column-gap: 20px;
 
     @include article_constr;
+    @media screen and (max-width: 768px) {
+        margin-left: 23px;
+        margin-top: -55px;
+        margin-bottom: -108px;
+      }
 }

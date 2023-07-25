@@ -11,6 +11,10 @@
         margin-left: 37px;
         margin-bottom: -41px;
         column-gap: 65px;
+        @media screen and (max-width: 768px) {
+          margin-top: 61px;
+          margin-bottom: -86px;
+          }
     
         &-link {
             display: flex;
