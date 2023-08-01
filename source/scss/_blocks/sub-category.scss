@@ -3,14 +3,17 @@
     margin-top: 23px;
     margin-left: 162px;
     column-gap: 20px;
+     
     @media screen and (max-width: 768px) {
         margin-left: -18px;
     }
     @media screen and (max-width: 376px) {
-        margin-left: -34px;
-        flex-wrap: wrap-reverse;
-        flex-direction: row-reverse;
-        column-gap: 10px;
+        margin-left: -43px;
+        margin-top: -5px;
+        flex-wrap: wrap;
+        flex-direction: row;
+        column-gap: 9px;
+        row-gap: 10px;
     }
 
     &-item {

@@ -1,6 +1,6 @@
 .page_title {
     display: flex;
-    margin-top: 56px;
+    margin-top: 60px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
@@ -9,40 +9,34 @@
     text-transform: uppercase;
     color: #1E0606;
     @media screen and (max-width: 768px) {
+        margin-top: 20px;
+        margin-left: 10px;
         font-size: 36px;
         line-height: 44px;
     }
-    @media screen and (max-width: 376px) {
+    @media screen and (max-width: 375px) {
         font-size: 24px;
         line-height: 29px;
     }
 }
 
-/* bread crumbs */
+/* bread crumbs - search-line*/
 
-.search_line {
-    display: block;
-    @media screen and (max-width: 376px) {
-        margin-left: 5px;
-    }
-
-    &_list {
-        margin-left: -38px;
-        margin-top: -12px;
-    }
-}
 
 /* form style */
 
 .contact_page {
     display: flex;
-    margin-top: 50px;
+    margin-top: 45px;
     column-gap: 119px;
     margin-bottom: -33px;
     @media screen and (max-width: 768px) {
         flex-direction: column-reverse;
         align-items: center;
-        margin-top: -50px;
+        margin-top: -7px;
+    }
+    @media screen and (max-width: 376px) {
+        margin-top: -33px;
     }
 }
 

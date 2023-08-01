@@ -1,4 +1,4 @@
-.page_title {
+.blog_title {
     display: flex;
     margin-top: 56px;
     font-family: 'Montserrat';
@@ -8,16 +8,21 @@
     line-height: 49px;
     text-transform: uppercase;
     color: #1E0606;
+    @media screen and (max-width: 768px) {
+        font-size: 36px;
+        line-height: 44px;
+        margin-left: 18px;
+        margin-top: 18px;
+    }
+    @media screen and (max-width: 376px) {
+        font-size: 24px;
+        line-height: 29px;
+        margin-left: -1px;
+        margin-top: -17px;
+    }
 }
 
 /* bread crumbs */
 
-.search_line {
-    display: block;
 
-    &_list {
-        margin-top: -13px;
-        margin-bottom: 50px;
-    }
-}
 /* articles style - blocks/article */

@@ -14,7 +14,12 @@
         @media screen and (max-width: 768px) {
           margin-top: 61px;
           margin-bottom: -86px;
-          }
+          margin-left: -52px;
+        }
+        @media screen and (max-width: 376px) {
+            margin-left: -52px;
+            column-gap: 52px;
+        }
     
         &-link {
             display: flex;
@@ -57,7 +62,15 @@
             transform: rotate(180deg);
             background-repeat: no-repeat;
         }
-        
+
+        @media screen and (max-width: 768px) {
+            margin-left: 7px;
+            margin-right: 130px;
+        }
+        @media screen and (max-width: 376px) {
+            margin-left: 16px;
+            margin-right: -8px;
+        }
     }
 
     &_button-ahead {
@@ -74,6 +87,13 @@
         &:active {
             background-image: url("/img/page_ahead_active.svg");
             background-repeat: no-repeat;
+        }
+
+        @media screen and (max-width: 768px) {
+            margin-left: 131px;
+        }
+        @media screen and (max-width: 376px) {
+            margin-left: -5px;
         }
     }
 }

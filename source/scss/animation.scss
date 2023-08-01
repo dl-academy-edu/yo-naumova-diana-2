@@ -4,14 +4,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 1400px;
+    width: 1400px;
     height: 768px;
     overflow: hidden;
 }
 
 .scene_pic {
     display: flex;
-    // margin-left: 80px;
+    margin-bottom: 840px;
     justify-content: center;
     overflow: hidden;
 }
@@ -44,7 +44,7 @@
     position: absolute;
     top: 775px;
     left: 15px;
-    animation: first_car 4s ease-in paused;
+    animation: first_car 4s ease-in infinite;
 }
 
 @keyframes first_car {
@@ -61,7 +61,7 @@
     position: absolute;
     top: 780px;
     left: 405px;
-    animation: second_car 3s ease-in paused;
+    animation: second_car 3s ease-in infinite;
 }
 
 @keyframes second_car {
@@ -78,7 +78,7 @@
     position: absolute;
     top: 795px;
     left: 700px;
-    animation: third_car 2s ease-in paused;
+    animation: third_car 2s ease-in infinite;
 }
 
 @keyframes third_car {
@@ -95,7 +95,7 @@
     position: absolute;
     top: 758px;
     left: 1250px;
-    animation: fourth_car 3s ease-in paused;
+    animation: fourth_car 3s ease-in infinite;
 }
 
 @keyframes fourth_car {
@@ -112,16 +112,22 @@
     position: absolute;
     top: 750px;
     left: 1400px;
-    animation: taxi 8s ease-in-out forwards infinite;
+    animation: taxi 20s ease-in-out forwards;
 }
 
 @keyframes taxi {
     0% {
         transform: translate(0px);
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
     }
 
     50% {
         transform: translate(-1000px);
+        opacity: 1;
     }
 
     60% {
@@ -145,10 +151,59 @@
     left: 255px;
 }
 
+.woman_hand{
+    position: absolute;
+    top: 917px;
+    left: 282px;
+    animation: woman_hand 4s ease-in-out;
+    transform-origin: left top;
+}
+
+@keyframes woman_hand {
+    0% {
+        // transform: translate(3px);
+        rotate: (0deg);
+    }
+
+    50% {
+        // transform: translate(5px);
+        rotate: (-30deg);
+    }
+
+    100% {
+        // transform: translate(3px);
+        rotate: (0deg);
+    }
+}
+
 .man{
     position: absolute;
     top: 678px;
     left: 370px;
+}
+
+.man_hand {
+    position: absolute;
+    rotate: 150deg;
+    top: 643px;
+    left: 386px;  
+    animation: man_hand 9s ease-in-out;
+    transform-origin: left bottom;
+}
+
+@keyframes man_hand {
+    
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(-150deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
 }
 
 .suitcases {
@@ -161,8 +216,8 @@
     position: absolute;
     top: 705px;
     left: 170px;
-    animation: message_woman 7s ease-in-out infinite;
-    transition: opacity 2s;
+    opacity: 0;
+    animation: message_woman 7s ease-in;
 }
 
 @keyframes message_woman {
@@ -191,8 +246,8 @@
     position: absolute;
     top: 640px;
     left: 355px;
-    animation: message_man 7s ease-in-out infinite;
-    transition: opacity 2s;
+    opacity: 0;
+    animation: message_man 9s ease-in-out;
 }
 
 @keyframes message_man {
@@ -221,8 +276,8 @@
     position: absolute;
     top: 705px;
     left: 1720px;
-    animation: message_taxi 8s ease-in-out infinite;
-    transition: opacity 3s;
+    opacity: 0;
+    animation: message_taxi 20s ease-in-out;
 }
 
 @keyframes message_taxi {
@@ -241,7 +296,7 @@
     }
 
     60% {
-        opacity: 1;
+        opacity: 0;
         transform: translate(-1000px);
     }
 

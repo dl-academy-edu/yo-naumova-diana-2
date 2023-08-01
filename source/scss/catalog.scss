@@ -1,4 +1,4 @@
-.page_title {
+.catalog_title {
     display: flex;
     margin-top: 57px;
     font-family: 'Montserrat';
@@ -8,26 +8,22 @@
     line-height: 49px;
     text-transform: uppercase;
     color: #1E0606;
+    @media screen and (max-width: 768px) {
+        font-size: 36px;
+        line-height: 44px;
+        margin-left: 18px;
+        margin-top: 18px;
+    }
+    @media screen and (max-width: 376px) {
+        font-size: 24px;
+        line-height: 29px;
+        margin-left: -1px;
+        margin-top: -17px;
+    }
 }
 
 /* bread crumbs */
 
-.search_line {
-    display: block;
-    @media screen and (max-width: 768px) {
-        margin-left: 20px;
-        margin-top: -50px;
-    }
-    @media screen and (max-width: 376px) {
-        margin-top: -65px;
-        margin-left: 9px;
-    }
-
-    &_list {
-        margin-left: -39px;
-        margin-top: -13px;  
-    }
-}
 
 /* category style */
 
@@ -40,15 +36,17 @@
 .catalog_categories_list {
     display: flex;
     margin-left: -38px;
-    margin-top: 50px;
+    margin-top: 30px;
     column-gap: 20px;
     @media screen and (max-width: 768px) {
         margin-left: -18px;
-        margin-top: -50px;
+        margin-top: -30px;
     }
     @media screen and (max-width: 376px) {
+        margin-top: -40px;
         margin-left: -34px;
         column-gap: 10px;
+        row-gap: 10px;
         width: 376px;
         flex-wrap: wrap;
     }
@@ -114,6 +112,19 @@
     @media screen and (max-width: 376px) {
         width: 160px;
         height: 155px;
+        display: flex;
+        position: absolute;
+        top: -166px;
+        left: 178px;
+    }
+}
+
+.yeti_link {
+    @media screen and (max-width: 376px) {
+        display: flex;
+        position: absolute;
+        top: -100px;
+        left: 192px;
     }
 }
 
@@ -185,10 +196,16 @@
 
 .product_desc {
     display: block;
-    margin-bottom: -47px;
+    margin-bottom: -40px;
     @media screen and (max-width: 768px) {
         margin-left: -175px;
-        margin-top: -50px;
+        margin-top: -80px;
+        margin-bottom: -80px;
+    }
+    @media screen and (max-width: 376px) {
+        margin-top: -80px;
+        margin-left: -192px;
+        margin-bottom: -80px;
     }
 
     &-title {
@@ -203,6 +220,14 @@
         line-height: 46px;
         text-transform: uppercase;
         color: #1E0606;
+        @media screen and (max-width: 768px) {
+            font-size: 36px;
+            line-height: 44px;
+        }
+        @media screen and (max-width: 376px) {
+            font-size: 24px;
+            line-height: 29px;
+        }
     }
 
     &-text {
@@ -216,5 +241,11 @@
         line-height: 22px;
         color: #1E0606;
         width: 680px;
+        @media screen and (max-width: 768px) {
+            width: 648px;
+        }
+        @media screen and (max-width: 376px) {
+            width: 335px;
+        }
     }
 }

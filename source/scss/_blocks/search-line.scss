@@ -7,8 +7,13 @@
     &_list {
         display: flex;
         margin-left: -38px;
-        margin-top: -12px;
         column-gap: 14px;
+        @media screen and (max-width: 768px) {
+            margin-left: -18px;
+        }
+        @media screen and (max-width: 376px) {
+            margin-left: -38px;
+        }
     
         &-link {
             font-family: 'Crimson Text';
@@ -17,6 +22,9 @@
             font-size: 20px;
             line-height: 26px;
             color: #1E0606;
+            @media screen and (max-width: 376px) {
+                font-size: 16px;
+            }
     
             &:hover {
                 opacity: 0.5;
@@ -31,5 +39,7 @@
     &_button-ahead {
         border: none;
         background-color: #ffffff;
+        width: 8px;
+        height: 12px;
     }
 }

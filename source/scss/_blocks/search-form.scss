@@ -13,8 +13,14 @@
         flex-wrap: wrap;
         flex-direction: row;
         height: 323px;
-        margin-top: -35px;
+        margin-top: -8px;
+    }
+    @media screen and (max-width: 376px) {
+        max-width: 376px;
         display: flex;
+        flex-wrap: wrap;
+        height: 439px;
+        margin-top: -8px;
     }
 
     &_title {
@@ -26,6 +32,9 @@
         font-size: 16px;
         line-height: 22px;
         color: #1E0606;
+        @media screen and (max-width: 376px) {
+            font-size: 14px;
+        }
     }
 }
 
@@ -46,6 +55,13 @@
         margin-left: 310px;
         margin-top: -28px;
     }
+    @media screen and (max-width: 376px) {
+        display: flex;
+        flex-direction: column;
+        width: 376px;
+        margin-left: 291px;
+        margin-top: -28px;
+    }
 }
 
 /* cost style */
@@ -59,6 +75,10 @@
     @media screen and (max-width: 768px) {
         width: 164px;
         margin-right: 60px;
+    }
+    @media screen and (max-width: 376px) {
+        width: 167px;
+        margin-top: -10px;
     }
 }
 
@@ -100,6 +120,9 @@
     font-size: 16px;
     line-height: 22px;
     color: #1E0606;
+    @media screen and (max-width: 376px) {
+        font-size: 14px;
+    }
 }
 
 /* color style */
@@ -114,6 +137,10 @@
         margin-left: 76px;
         margin-right: 60px;
     }
+    @media screen and (max-width: 376px) {
+        margin-left: -287px;
+        margin-top: -72px;
+    }
 }
 
 .set_color {
@@ -126,6 +153,11 @@
     line-height: 22px;
     width: max-content;
     color: #1E0606;
+    @media screen and (max-width: 376px) {
+        font-size: 14px;
+        display: flex;
+        margin-top: -5px;
+    }
 }
 
 .color_label {
@@ -183,6 +215,11 @@
         margin-right: 90px;
         margin-left: 17px;
     }
+    @media screen and (max-width: 376px) {
+        width: 112px;
+        margin-left: -112px;
+        margin-top: -232px;
+    }
 }
 
 .set_delivery {
@@ -195,6 +232,9 @@
     font-size: 16px;
     line-height: 22px;
     color: #1E0606;
+    @media screen and (max-width: 376px) {
+        font-size: 14px;
+    }
 }
 
 .delivery_label {
@@ -251,12 +291,22 @@
         margin-right: 259px;
         margin-left: -289px;
     }
+    @media screen and (max-width: 376px) {
+        width: 131px;
+        margin-top: 32px;
+        margin-left: -287px;
+    }
 }
 
 .amount_list {
     display: flex;
     margin-left: -105px;
     margin-top: 0px;
+    @media screen and (max-width: 376px) {
+        width: 131px;
+        margin-left: -95px;
+        margin-top: -5px;
+    }
 }
 
 .amount_btn {
@@ -275,6 +325,11 @@
     background-color: #ffffff;
     border-style: none;
     cursor: pointer;
+    @media screen and (max-width: 376px) {
+        font-size: 14px;
+        width: 80px;
+        height: 29px;
+    }
 
     &:hover {
         background-color: #EDDEEB;
@@ -299,5 +354,10 @@
     @media screen and (max-width: 768px) {
       margin-top: -12px;
       flex-wrap: wrap;
+    }
+    @media screen and (max-width: 376px) {
+        margin-top: 10px;
+        flex-wrap: wrap;
+        margin-left: -162px;
     }
 }

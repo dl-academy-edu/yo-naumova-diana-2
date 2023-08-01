@@ -25,8 +25,7 @@
         @@include('blocks/header.html')
         <main class="catalog">
             <section class="search_line container">
-                <h1 class="page_title">CATEGORY PRODUCTS</h1>
-                <ul class="search_line_list">
+                <h1 class="catalog_title">CATEGORY PRODUCTS</h1>
                 @@include('blocks/search-line.html',{
                     'page': "/catalog.html",
                     'page-name': "Catalog"
@@ -66,7 +65,7 @@
                             'alt': "Yeti",
                             'classPic': "yeti_subpic",
                             'page': "#",
-                            'className': "categories_sublist-link",
+                            'className': "categories_sublist-link yeti_link",
                             'name':"ACCESSORIES"
                         })
                         @@include('blocks/sub-category.html',{
