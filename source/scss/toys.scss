@@ -12,12 +12,14 @@
     line-height: 49px;
     text-transform: uppercase;
     color: #1E0606;
+
     @media screen and (max-width: 768px) {
         font-size: 36px;
         line-height: 44px;
         margin-left: 18px;
         margin-top: 18px;
     }
+
     @media screen and (max-width: 376px) {
         font-size: 24px;
         line-height: 29px;
@@ -41,10 +43,11 @@
         @media screen and (max-width: 768px) {
             margin-left: -18px;
         }
+
         @media screen and (max-width: 376px) {
             margin-left: -38px;
         }
-    
+
         &-link {
             font-family: 'Crimson Text';
             font-style: italic;
@@ -52,14 +55,15 @@
             font-size: 20px;
             line-height: 26px;
             color: #1E0606;
+
             @media screen and (max-width: 376px) {
                 font-size: 16px;
             }
-        
+
             &:hover {
                 opacity: 0.5;
             }
-            
+
             &:active {
                 opacity: 0.2;
             }
@@ -80,10 +84,12 @@
     &_wrapper {
         display: flex;
         margin-left: -42px;
+
         @media screen and (max-width: 768px) {
             margin-left: -54px;
             margin-bottom: -68px;
         }
+
         @media screen and (max-width: 376px) {
             margin-left: -98px;
             margin-bottom: -68px;
@@ -95,6 +101,7 @@
         margin-top: 60px;
         flex-wrap: wrap;
         justify-content: space-around;
+
         @media screen and (max-width: 768px) {
             margin-left: 40px;
             justify-content: start;
@@ -102,6 +109,7 @@
             margin-top: 20px;
             margin-bottom: -50px;
         }
+
         @media screen and (max-width: 376px) {
             flex-wrap: wrap;
             column-gap: 16px;
@@ -120,14 +128,17 @@
             line-height: 19px;
             text-align: center;
             color: #1E0606;
+
             @media screen and (max-width: 768px) {
                 font-size: 12px;
                 line-height: 16px;
             }
+
             @media screen and (max-width: 376px) {
                 width: 157px;
             }
         }
+
         &-info {
             display: flex;
             position: absolute;
@@ -145,9 +156,10 @@
             font-size: 26px;
             line-height: 29px;
             text-align: center;
-            text-transform: uppercase; 
+            text-transform: uppercase;
             color: #1E0606;
             cursor: pointer;
+
             @media screen and (max-width: 768px) {
                 margin-left: 50px;
                 margin-right: 90px;
@@ -158,6 +170,7 @@
                 font-size: 16px;
                 line-height: 19px;
             }
+
             @media screen and (max-width: 376px) {
                 margin-left: 25px;
             }
@@ -165,6 +178,7 @@
             &:hover {
                 opacity: 0.9;
             }
+
             &:active {
                 opacity: 0.7;
             }
@@ -185,10 +199,12 @@
     line-height: 22px;
     text-align: center;
     color: #1E0606;
+
     @media screen and (max-width: 768px) {
         font-size: 14px;
         line-height: 19px;
     }
+
     @media screen and (max-width: 376px) {
         font-size: 12px;
     }

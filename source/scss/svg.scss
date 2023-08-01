@@ -13,36 +13,37 @@
     margin-left: -20px;
 }
 
-.sun_second{
+.sun_second {
     animation: sun linear 5s forwards;
 }
 
 @keyframes sun {
     0% {
-        transform: translate(0,0);
+        transform: translate(0, 0);
     }
+
     20% {
-        transform: translate(30px,-6px);
+        transform: translate(30px, -6px);
     }
 
     35% {
-        transform: translate(45px,-9px);
+        transform: translate(45px, -9px);
     }
 
     50% {
-        transform: translate(60px,-10px);
+        transform: translate(60px, -10px);
     }
-    
+
     65% {
-        transform: translate(75px,-9px);
+        transform: translate(75px, -9px);
     }
 
     80% {
-        transform: translate(90px,-6px);
+        transform: translate(90px, -6px);
     }
-    
+
     100% {
-        transform: translate(110px,0);
+        transform: translate(110px, 0);
     }
 }
 
@@ -63,17 +64,18 @@
     50% {
         fill: #5de5ec;
     }
-    
+
     80% {
         fill: #ecec5d;
     }
 
     100% {
-        fill: #e88e33;;
+        fill: #e88e33;
+        ;
     }
 }
 
-.smallpyro_second_pic{
+.smallpyro_second_pic {
     animation: smallpyro 5s ease-in forwards;
     fill: #545C66;
 }
@@ -90,7 +92,7 @@
     50% {
         fill: #7b8491;
     }
-    
+
     80% {
         fill: #646e7a;
     }
@@ -100,7 +102,7 @@
     }
 }
 
-.bigpyro_second_pic{
+.bigpyro_second_pic {
     animation: bigpyro 5s ease-in forwards;
     fill: #656D78;
 }
@@ -117,7 +119,7 @@
     50% {
         fill: #969fab;
     }
-    
+
     80% {
         fill: #79818d;
     }
@@ -130,9 +132,11 @@
 .desc_first {
     stroke: #CCD1D9;
     cursor: pointer;
+
     &:hover {
         stroke: #5D9CEC;
     }
+
     &:active {
         stroke: #5de5ec;
     }
@@ -141,9 +145,11 @@
 .desc_second {
     stroke: #CCD1D9;
     cursor: pointer;
+
     &:hover {
         stroke: #5D9CEC;
     }
+
     &:active {
         stroke: #5de5ec;
     }
@@ -154,6 +160,7 @@
     justify-content: flex-end;
     opacity: 0;
     animation: themes 11s forwards;
+
     @for $i from 1 through 11 {
         &:nth-child(#{$i}) {
             animation-delay: $i +1s;
@@ -164,97 +171,108 @@
 @keyframes themes {
     0% {
         opacity: 0;
-        transform: translate(210px,0px);
+        transform: translate(210px, 0px);
     }
+
     100% {
         opacity: 1;
-        transform: translate(0px,0px);
+        transform: translate(0px, 0px);
     }
 }
 
 .first_theme {
     stroke: #5D9CEC;
     cursor: pointer;
+
     &:hover {
         stroke: #5de5ec;
     }
-    animation: themes 1s ease-in forwards ;
+
+    animation: themes 1s ease-in forwards;
 }
 
 .second_theme {
     stroke: #A0D468;
     cursor: pointer;
+
     &:hover {
         stroke: #c4f170;
     }
-    animation: themes 3s ease-in-out forwards ;
+
+    animation: themes 3s ease-in-out forwards;
 }
 
 .third_big_theme {
     fill: #ED5565;
     cursor: pointer;
+
     &:hover {
         fill: #ff5e70;
     }
-    animation: themes 5s ease-in forwards ;
+
+    animation: themes 5s ease-in forwards;
 }
 
 .third_small_theme {
     stroke: #ED5565;
     cursor: pointer;
+
     &:hover {
         stroke: #ff5e70;
     }
-    animation: themes 5s ease-in forwards ;
+
+    animation: themes 5s ease-in forwards;
 }
 
 .four_theme {
     fill: #FFCE54;
     cursor: pointer;
+
     &:hover {
         fill: #ffe854;
     }
-    animation: themes 7s ease-in forwards ;
+
+    animation: themes 7s ease-in forwards;
 }
 
 .five_theme {
     stroke: #CCD1D9;
-    animation: themes 3s ease-in forwards ;
+    animation: themes 3s ease-in forwards;
 }
 
 .six_small_theme {
     stroke: #CCD1D9;
-    animation: themes 5s ease-in forwards ;
+    animation: themes 5s ease-in forwards;
 }
 
 .six_big_theme {
     fill: #CCD1D9;
-    animation: themes 7s ease-in forwards ;
+    animation: themes 7s ease-in forwards;
 }
 
 .seven_theme {
     fill: #CCD1D9;
-    animation: themes 9s ease-in forwards ;
+    animation: themes 9s ease-in forwards;
 }
 
 .eight_theme {
     stroke: #FFCE54;
-    animation: themes 11s ease-in forwards ;
+    animation: themes 11s ease-in forwards;
 }
 
 .nine_theme {
     stroke: #ED5565;
-    animation: themes 13s ease-in forwards ;
+    animation: themes 13s ease-in forwards;
 }
 
 .ten_theme {
     stroke: #A0D468;
-    animation: themes 15s ease-in forwards ;
+    animation: themes 15s ease-in forwards;
 }
 
 .eleven_theme {
     stroke: #5D9CEC;
-    animation: themes 17s ease-in forwards ;
+    animation: themes 17s ease-in forwards;
 }
 
 .arrow {

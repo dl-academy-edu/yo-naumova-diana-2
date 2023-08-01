@@ -8,12 +8,14 @@
     line-height: 49px;
     text-transform: uppercase;
     color: #1E0606;
+
     @media screen and (max-width: 768px) {
         margin-top: 20px;
         margin-left: 10px;
         font-size: 36px;
         line-height: 44px;
     }
+
     @media screen and (max-width: 375px) {
         font-size: 24px;
         line-height: 29px;
@@ -30,11 +32,13 @@
     margin-top: 45px;
     column-gap: 119px;
     margin-bottom: -33px;
+
     @media screen and (max-width: 768px) {
         flex-direction: column-reverse;
         align-items: center;
         margin-top: -7px;
     }
+
     @media screen and (max-width: 376px) {
         margin-top: -33px;
     }
@@ -42,8 +46,9 @@
 
 .form_fields {
     display: flex;
+
     @media screen and (max-width: 768px) {
-    margin-bottom: -40px;
+        margin-bottom: -40px;
     }
 }
 
@@ -55,10 +60,12 @@
 
 .form_inner-wr {
     padding: 42px 40px 65px 40px;
+
     @media screen and (max-width: 768px) {
         padding: 42px 50px 75px 60px;
         margin-left: -5px;
     }
+
     @media screen and (max-width: 376px) {
         padding: 42px 13px 75px 23px;
 
@@ -71,6 +78,7 @@
 
 .form_wrapper-name {
     display: flex;
+
     @media screen and (max-width: 376px) {
         // margin-left: 150px;
     }
@@ -79,6 +87,7 @@
 .form_inner {
     display: flex;
     column-gap: 20px;
+
     @media screen and (max-width: 376px) {
         flex-direction: column;
     }
@@ -107,12 +116,14 @@
     font-size: 18px;
     line-height: 21px;
     color: #1E0606;
+
     @media screen and (max-width: 768px) {
         width: 536px;
         height: 50px;
         font-size: 16px;
         line-height: 19px;
     }
+
     @media screen and (max-width: 376px) {
         width: 285px;
         height: 40px;
@@ -135,10 +146,12 @@
     font-size: 18px;
     line-height: 25px;
     color: #1E0606;
+
     @media screen and (max-width: 768px) {
         width: 258px;
         height: 48px;
     }
+
     @media screen and (max-width: 376px) {
         width: 285px;
         height: 40px;
@@ -164,10 +177,12 @@
     font-size: 18px;
     line-height: 25px;
     color: #1E0606;
+
     @media screen and (max-width: 768px) {
         width: 536px;
         height: 150px;
     }
+
     @media screen and (max-width: 376px) {
         width: 285px;
         height: 150px;
@@ -186,10 +201,12 @@
     font-size: 14px;
     line-height: 16px;
     color: #1E0606;
+
     @media screen and (max-width: 768px) {
         column-gap: 10px;
         margin-right: 10px;
     }
+
     @media screen and (max-width: 376px) {
         width: 280px;
     }
@@ -211,18 +228,20 @@
     width: 19px;
     height: 19px;
     background-image: url("/img/checkbox.svg");
+
     @media screen and (max-width: 376px) {
         width: 39px;
     }
 }
 
-.form_consent:checked + .form_label-consent::before {
+.form_consent:checked+.form_label-consent::before {
     content: "";
     cursor: pointer;
     display: inline-block;
     width: 19px;
     height: 19px;
     background-image: url("/img/checked.svg");
+
     @media screen and (max-width: 376px) {
         width: 39px;
     }
@@ -243,10 +262,12 @@
 .support {
     display: flex;
     width: 380px;
+
     @media screen and (max-width: 768px) {
         width: 536px;
         text-align: center;
     }
+
     @media screen and (max-width: 376px) {
         width: 335px;
         text-align: center;
@@ -268,12 +289,13 @@
         font-size: 16px;
         line-height: 22px;
         color: #1E0606;
+
         @media screen and (max-width: 376px) {
             font-size: 14px;
             line-height: 19px;
         }
     }
-    
+
     &_title {
         display: flex;
         margin-top: 4px;

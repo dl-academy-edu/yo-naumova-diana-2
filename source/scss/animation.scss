@@ -5,46 +5,46 @@
     justify-content: center;
     align-items: center;
     width: 1400px;
-    height: 768px;
+    position: relative;
     overflow: hidden;
+    margin-left: -90px;
+    margin-bottom: -124px;
 }
 
 .scene_pic {
-    display: flex;
     margin-bottom: 840px;
-    justify-content: center;
     overflow: hidden;
 }
 
 .city {
     position: absolute;
-    top: 484px;
-    left: -20px;
+    top: 118px;
+    left: -97px;
 }
 
-.sky{
+.sky {
     position: absolute;
-    top: 350px;
-    left: 150px;
+    top: 2px;
+    left: 63px;
 }
 
-.first_bg_lantern{
+.first_bg_lantern {
     position: absolute;
-    top: 520px;
-    left: 510px;
+    top: 154px;
+    left: 423px;
 }
 
-.second_bg_lantern{
+.second_bg_lantern {
     position: absolute;
-    top: 520px;
-    left: 1380px;
+    top: 154px;
+    left: 1293px;
 }
 
-.first_car{
+.first_car {
     position: absolute;
-    top: 775px;
-    left: 15px;
-    animation: first_car 4s ease-in infinite;
+    top: 409px;
+    left: -72px;
+    animation: first_car 4s ease-in forwards;
 }
 
 @keyframes first_car {
@@ -57,11 +57,11 @@
     }
 }
 
-.second_car{
+.second_car {
     position: absolute;
-    top: 780px;
-    left: 405px;
-    animation: second_car 3s ease-in infinite;
+    top: 414px;
+    left: 318px;
+    animation: second_car 3s ease-in forwards;
 }
 
 @keyframes second_car {
@@ -74,11 +74,11 @@
     }
 }
 
-.third_car{
+.third_car {
     position: absolute;
-    top: 795px;
-    left: 700px;
-    animation: third_car 2s ease-in infinite;
+    top: 429px;
+    left: 613px;
+    animation: third_car 2s ease-in forwards;
 }
 
 @keyframes third_car {
@@ -91,11 +91,11 @@
     }
 }
 
-.fourth_car{
+.fourth_car {
     position: absolute;
-    top: 758px;
-    left: 1250px;
-    animation: fourth_car 3s ease-in infinite;
+    top: 392px;
+    left: 1163px;
+    animation: fourth_car 3s ease-in forwards;
 }
 
 @keyframes fourth_car {
@@ -108,10 +108,10 @@
     }
 }
 
-.taxi{
+.taxi {
     position: absolute;
-    top: 750px;
-    left: 1400px;
+    top: 384px;
+    left: 1313px;
     animation: taxi 20s ease-in-out forwards;
 }
 
@@ -139,60 +139,57 @@
     }
 }
 
-.lantern{
+.lantern {
     position: absolute;
-    top: 510px;
-    left: 1125px;
+    top: 144px;
+    left: 1038px;
 }
 
-.woman{
+.woman {
     position: absolute;
-    top: 803px;
-    left: 255px;
+    top: 437px;
+    left: 168px;
 }
 
-.woman_hand{
+.woman_hand {
     position: absolute;
-    top: 917px;
-    left: 282px;
-    animation: woman_hand 4s ease-in-out;
+    top: 551px;
+    left: 195px;
+    animation: woman_hand 2s ease-in-out;
     transform-origin: left top;
 }
 
 @keyframes woman_hand {
     0% {
-        // transform: translate(3px);
         rotate: (0deg);
     }
 
     50% {
-        // transform: translate(5px);
         rotate: (-30deg);
     }
 
     100% {
-        // transform: translate(3px);
         rotate: (0deg);
     }
 }
 
-.man{
+.man {
     position: absolute;
-    top: 678px;
-    left: 370px;
+    top: 312px;
+    left: 283px;
 }
 
 .man_hand {
     position: absolute;
     rotate: 150deg;
-    top: 643px;
-    left: 386px;  
+    top: 275px;
+    left: 299px;
     animation: man_hand 9s ease-in-out;
     transform-origin: left bottom;
 }
 
 @keyframes man_hand {
-    
+
     0% {
         transform: rotate(0deg);
     }
@@ -208,14 +205,14 @@
 
 .suitcases {
     position: absolute;
-    top: 975px;
-    left: 245px;
+    top: 609px;
+    left: 158px;
 }
 
 .message_woman {
     position: absolute;
-    top: 705px;
-    left: 170px;
+    top: 339px;
+    left: 83px;
     opacity: 0;
     animation: message_woman 7s ease-in;
 }
@@ -244,8 +241,8 @@
 
 .message_man {
     position: absolute;
-    top: 640px;
-    left: 355px;
+    top: 274px;
+    left: 268px;
     opacity: 0;
     animation: message_man 9s ease-in-out;
 }
@@ -274,8 +271,8 @@
 
 .message_taxi {
     position: absolute;
-    top: 705px;
-    left: 1720px;
+    top: 339px;
+    left: 1633px;
     opacity: 0;
     animation: message_taxi 20s ease-in-out;
 }

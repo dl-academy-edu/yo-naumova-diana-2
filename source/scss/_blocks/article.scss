@@ -1,17 +1,19 @@
 .article {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  column-gap: 20px;
-  margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    margin-top: 50px;
 
-  @include article_constr;
-  @media screen and (max-width: 768px) {
-      margin-left: 23px;
-      margin-top: -38px;
-      margin-bottom: -108px;
-  }
-  @media screen and (max-width: 376px) {
-    margin-left: 2px;
-  }
+    @include article_constr;
+
+    @media screen and (max-width: 768px) {
+        margin-left: 23px;
+        margin-top: -38px;
+        margin-bottom: -108px;
+    }
+
+    @media screen and (max-width: 376px) {
+        margin-left: 2px;
+    }
 }
