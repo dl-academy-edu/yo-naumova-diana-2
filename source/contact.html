@@ -7,8 +7,8 @@
         <meta name="format-detection" content="telephone=no">
 
         <title>Contact</title>
-        <meta name="description" content="">
-        <meta name="keywords" content="">
+        <meta name="description" content="Design Life Kids support team are on-hand to assist with any issues you are experiencing.">
+        <meta name="keywords" content="contact, toys shop, support, issues. ">
 
         <script>
         var docElement = document.documentElement;
@@ -26,12 +26,10 @@
         <main class="contact">
             <section class="search_line container">
                 <h1 class="page_title">CONTACT US</h1>
-                <ul class="search_line_list">
-                    <li class="search_line_list-item"><a class="search_line_list-link" href="/index.html">Home</a></li>
-                    <li class="search_line_list-item"><button type="button" class="search_line_button-ahead"><img src="/img/icon/ahead.svg" alt="btn-ahead" width="8" height="12"></button>
-                    </li>
-                    <li class="search_line_list-item"><a class="search_line_list-link" href="/contact.html">Contact Us</a></li>
-                </ul>
+                @@include('blocks/search-line.html',{
+                    'page': "/contact.html",
+                    'page-name': "Contacts"
+                })
             </section>
             <div class="contact_page container">
                 <div class="form_fields">
@@ -72,10 +70,10 @@
                 </div>
                 <div class="support">
                     <ul class="support_list">
-                        <li><p class="support_text">Our support team are on-hand to assist with any issues you are experiencing.</p></li>
-                        <li><p class="support_text">Please use the form to contact us with your needs. Send us a message and we'll respond as soon as
+                        <li class="support_list-item"><p class="support_text">Our support team are on-hand to assist with any issues you are experiencing.</p></li>
+                        <li class="support_list-item"><p class="support_text">Please use the form to contact us with your needs. Send us a message and we'll respond as soon as
                             possible.</p></li>
-                        <li><h2 class="support_title">An expert is waiting to help you!</h2></li>
+                        <li class="support_list-item"><h2 class="support_title">An expert is waiting to help you!</h2></li>
                     </ul>
                 </div>
             </div>

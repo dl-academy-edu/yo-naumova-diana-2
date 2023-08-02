@@ -1,0 +1,49 @@
+.search_line {
+    display: block;
+
+    @media screen and (max-width: 376px) {
+        margin-left: 5px;
+    }
+
+    &_list {
+        display: flex;
+        margin-left: -38px;
+        column-gap: 14px;
+
+        @media screen and (max-width: 768px) {
+            margin-left: -18px;
+        }
+
+        @media screen and (max-width: 376px) {
+            margin-left: -38px;
+        }
+
+        &-link {
+            font-family: 'Crimson Text';
+            font-style: italic;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 26px;
+            color: #1E0606;
+
+            @media screen and (max-width: 376px) {
+                font-size: 16px;
+            }
+
+            &:hover {
+                opacity: 0.5;
+            }
+
+            &:active {
+                opacity: 0.2;
+            }
+        }
+    }
+
+    &_button-ahead {
+        border: none;
+        background-color: #ffffff;
+        width: 8px;
+        height: 12px;
+    }
+}

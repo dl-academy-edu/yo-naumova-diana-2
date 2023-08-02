@@ -1,45 +1,46 @@
 <!doctype html>
 <html lang="en" class="no-js">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width">
-        <meta name="google" content="notranslate">
-        <meta name="format-detection" content="telephone=no">
 
-        <title>Blog</title>
-        <meta name="description" content="">
-        <meta name="keywords" content="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
 
-        <script>
+    <title>Blog</title>
+    <meta name="description" content="Our blog includes articles about toys companies, and also our company news.">
+    <meta name="keywords" content="blog, service companies, brand identity, tips.">
+
+    <script>
         var docElement = document.documentElement;
         docElement.className = docElement.className.replace(/\bno-js\b/, '') + ' js';
-        </script>
+    </script>
 
-        <!-- Favicon -->
+    <!-- Favicon -->
 
-        <!-- build:css -->
-        <link href="css/style.min.css" rel="stylesheet">
-        <!-- endbuild -->
-    </head>
-    <body>
-        @@include('blocks/header.html')
-        <main class="blog">
-            <section class="search_line container">
-                <h1 class="page_title">BLOG</h1>
-                <ul class="search_line_list">
-                    <li class="search_line_list-item"><a class="search_line_list-link" href="/index.html">Home</a></li>
-                    <li class="search_line_list-item"><button type="button" class="search_line_button-ahead"><img src="./img/icon/ahead.svg" alt="btn-ahead" width="8" height="12"></button>
-                    </li>
-                    <li class="search_line_list-item"><a class="search_line_list-link" href="/blog.html">Blog</a></li>
-                </ul>
-            </section>
-            <div class="article container">
-                @@include('blocks/article.html')
-            </div>
-            @@include('blocks/pagination.html')
-        </main>
-        @@include('blocks/footer.html')
+    <!-- build:css -->
+    <link href="css/style.min.css" rel="stylesheet">
+    <!-- endbuild -->
+</head>
 
-        <script src="js/app.js" defer></script>
-    </body>
+<body>
+    @@include('blocks/header.html')
+    <main class="blog">
+        <section class="search_line container">
+            <h1 class="blog_title">BLOG</h1>
+            @@include('blocks/search-line.html',{
+            'page': "/blog.html",
+            'page-name': "Blog"
+            })
+        </section>
+        <div class="article container">
+            @@include('blocks/article.html')
+        </div>
+        @@include('blocks/pagination.html')
+    </main>
+    @@include('blocks/footer.html')
+
+    <script src="js/app.js" defer></script>
+</body>
+
 </html>

@@ -1,4 +1,4 @@
-.page_title {
+.catalog_title {
     display: flex;
     margin-top: 57px;
     font-family: 'Montserrat';
@@ -8,53 +8,52 @@
     line-height: 49px;
     text-transform: uppercase;
     color: #1E0606;
+
+    @media screen and (max-width: 768px) {
+        font-size: 36px;
+        line-height: 44px;
+        margin-left: 18px;
+        margin-top: 18px;
+    }
+
+    @media screen and (max-width: 376px) {
+        font-size: 24px;
+        line-height: 29px;
+        margin-left: -1px;
+        margin-top: -17px;
+    }
 }
 
 /* bread crumbs */
 
-.search_line {
-    display: block;
-
-    &_list {
-        display: flex;
-        margin-left: -39px;
-        margin-top: -13px;
-        column-gap: 13px;
-        border-top: 30px;
-    
-        &-link {
-            font-family: 'Crimson Text';
-            font-style: italic;
-            font-weight: 400;
-            font-size: 20px;
-            line-height: 26px;
-            color: #1E0606;
-            transition: opacity 0.7s;
-        
-            &:hover {
-                opacity: 0.5;
-            }
-        
-            &:active {
-                opacity: 0.2;
-            }
-        }
-    }
-
-    &_button-ahead {
-        border: none;
-        background-color: #ffffff;
-        z-index: 1;
-    }
-}
 
 /* category style */
+
+.category_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 375px;
+}
 
 .catalog_categories_list {
     display: flex;
     margin-left: -38px;
-    margin-top: 50px;
+    margin-top: 30px;
     column-gap: 20px;
+
+    @media screen and (max-width: 768px) {
+        margin-left: -18px;
+        margin-top: -30px;
+    }
+
+    @media screen and (max-width: 376px) {
+        margin-top: -40px;
+        margin-left: -34px;
+        column-gap: 10px;
+        row-gap: 10px;
+        width: 376px;
+        flex-wrap: wrap;
+    }
 
     &-item {
         display: flex;
@@ -64,41 +63,114 @@
     }
 }
 
-.shirt_pic {
-    background-color: #DBE4DB; 
+.shirt_subpic {
+    background-color: #DBE4DB;
     width: 280px;
     height: 270px;
-}
 
-.sock_pic {
-    background-color: #EADDD3; 
-    width: 280px;
-    height: 270px;
-}
-
-.deer_pic {
-    background-color: #F8F2DA; 
-    width: 280px;
-    height: 270px;
-}
-
-.yeti_pic {
-    background-color: #D5D4E1; 
-    width: 280px;
-    height: 270px;
-}
-
-.flamingo_pic {
-    background-color: #F3D0DB; 
-    width: 280px;
-    height: 270px;
+    @media screen and (max-width: 768px) {
+        width: 203px;
+        height: 196px;
     }
 
-.blouse_pic {
-    background-color: #E5EAF8; 
+    @media screen and (max-width: 376px) {
+        width: 160px;
+        height: 155px;
+    }
+}
+
+.sock_subpic {
+    background-color: #EADDD3;
     width: 280px;
     height: 270px;
+
+    @media screen and (max-width: 768px) {
+        width: 203px;
+        height: 196px;
     }
+
+    @media screen and (max-width: 376px) {
+        width: 160px;
+        height: 155px;
+    }
+}
+
+.deer_subpic {
+    background-color: #F8F2DA;
+    width: 280px;
+    height: 270px;
+
+    @media screen and (max-width: 768px) {
+        width: 203px;
+        height: 196px;
+    }
+
+    @media screen and (max-width: 376px) {
+        width: 160px;
+        height: 155px;
+    }
+}
+
+.yeti_subpic {
+    background-color: #D5D4E1;
+    width: 280px;
+    height: 270px;
+
+    @media screen and (max-width: 768px) {
+        width: 203px;
+        height: 196px;
+    }
+
+    @media screen and (max-width: 376px) {
+        width: 160px;
+        height: 155px;
+        display: flex;
+        position: absolute;
+        top: -166px;
+        left: 178px;
+    }
+}
+
+.yeti_link {
+    @media screen and (max-width: 376px) {
+        display: flex;
+        position: absolute;
+        top: -100px;
+        left: 192px;
+    }
+}
+
+.flamingo_subpic {
+    background-color: #F3D0DB;
+    width: 280px;
+    height: 270px;
+
+    @media screen and (max-width: 768px) {
+        width: 203px;
+        height: 196px;
+    }
+
+    @media screen and (max-width: 376px) {
+        width: 160px;
+        height: 155px;
+    }
+}
+
+.blouse_subpic {
+    background-color: #E5EAF8;
+    width: 280px;
+    height: 270px;
+
+    @media screen and (max-width: 768px) {
+        width: 203px;
+        height: 196px;
+    }
+
+    @media screen and (max-width: 376px) {
+        width: 160px;
+        height: 155px;
+    }
+}
 
 .categories_list-link {
     display: flex;
@@ -114,6 +186,16 @@
     position: absolute;
     max-width: 155px;
     transition: text-decoration 0.7s;
+
+    @media screen and (max-width: 768px) {
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    @media screen and (max-width: 376px) {
+        font-size: 18px;
+        line-height: 22px;
+    }
 
     &:hover {
         text-decoration-line: underline;
@@ -132,7 +214,19 @@
 
 .product_desc {
     display: block;
-    margin-bottom: -47px;
+    margin-bottom: -40px;
+
+    @media screen and (max-width: 768px) {
+        margin-left: -175px;
+        margin-top: -80px;
+        margin-bottom: -80px;
+    }
+
+    @media screen and (max-width: 376px) {
+        margin-top: -80px;
+        margin-left: -192px;
+        margin-bottom: -80px;
+    }
 
     &-title {
         display: flex;
@@ -146,6 +240,16 @@
         line-height: 46px;
         text-transform: uppercase;
         color: #1E0606;
+
+        @media screen and (max-width: 768px) {
+            font-size: 36px;
+            line-height: 44px;
+        }
+
+        @media screen and (max-width: 376px) {
+            font-size: 24px;
+            line-height: 29px;
+        }
     }
 
     &-text {
@@ -159,5 +263,13 @@
         line-height: 22px;
         color: #1E0606;
         width: 680px;
+
+        @media screen and (max-width: 768px) {
+            width: 648px;
+        }
+
+        @media screen and (max-width: 376px) {
+            width: 335px;
+        }
     }
 }

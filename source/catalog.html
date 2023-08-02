@@ -7,8 +7,8 @@
         <meta name="format-detection" content="telephone=no">
 
         <title>Catalog</title>
-        <meta name="description" content="">
-        <meta name="keywords" content="">
+        <meta name="description" content="Catalog Design Life Kids.">
+        <meta name="keywords" content="category products, apparel, toys, accessories.">
 
         <script>
         var docElement = document.documentElement;
@@ -25,31 +25,35 @@
         @@include('blocks/header.html')
         <main class="catalog">
             <section class="search_line container">
-                <h1 class="page_title">CATEGORY PRODUCTS</h1>
-                <ul class="search_line_list">
-                    <li class="search_line_list-item"><a class="search_line_list-link" href="/index.html">Home</a></li>
-                    <li class="search_line_list-item"><button type="button" class="search_line_button-ahead"><img src="./img/icon/ahead.svg" alt="btn-ahead" width="8" height="12"></button>
-                    </li>
-                    <li class="search_line_list-item"><a class="search_line_list-link" href="/catalog.html">Catalog</a></li>
-                </ul>
+                <h1 class="catalog_title">CATEGORY PRODUCTS</h1>
+                @@include('blocks/search-line.html',{
+                    'page': "/catalog.html",
+                    'page-name': "Catalog"
+                })
             </section>
             <div class="category products container">
                 <div class="category_wrapper">
                     <ul class="catalog_categories_list">
                         @@include('blocks/category.html',{
                             'img': "./img/shirt.jpg",
+                            'alt': "Shirt",
+                            'classPic': "shirt_subpic",
+                            'page': "#",
                             'name': "APPAREL KIDS",
                             'className': "categories_list-link",
-                            'page': "#"
                         })
                         @@include('blocks/category.html',{
                             'img': "./img/sock.jpg",
+                            'alt': "Sock",
+                            'classPic': "sock_subpic",
                             'page': "#",
                             'className': "categories_list-link",
                             'name': "HOLIDAY SHOP"
                         })
                         @@include('blocks/category.html',{
                             'img': "./img/deer.jpg",
+                            'alt': "Deer",
+                            'classPic': "deer_subpic",
                             'page': "./toys.html",
                             'className': "categories_list-link",
                             'name': "TOYS",
@@ -58,18 +62,24 @@
                     <ul class="categories_sublist">
                         @@include('blocks/category.html',{
                             'img': "./img/yeti.jpg",
+                            'alt': "Yeti",
+                            'classPic': "yeti_subpic",
                             'page': "#",
-                            'className': "categories_sublist-link",
+                            'className': "categories_sublist-link yeti_link",
                             'name':"ACCESSORIES"
                         })
-                        @@include('blocks/category.html',{
+                        @@include('blocks/sub-category.html',{
                             'img': "./img/flamingo.jpg",
+                            'alt': "flamingo",
+                            'classSubpic': "flamingo_subpic",
                             'page': "#",
                             'className': "categories_sublist-link",
                             'name':"SALE"
                         })
-                        @@include('blocks/category.html',{
+                        @@include('blocks/sub-category.html',{
                             'img': "./img/blouse.jpg",
+                            'alt': "Blouse",
+                            'classSubpic': "blouse_subpic",
                             'page': "#",
                             'className': "categories_sublist-link",
                             'name':"APPAREL ADULTS"

@@ -8,6 +8,23 @@
     margin-top: 63px;
     background-color: #7d97da33;
 
+    @media screen and (max-width: 768px) {
+        max-width: 768px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        height: 323px;
+        margin-top: -8px;
+    }
+
+    @media screen and (max-width: 376px) {
+        max-width: 376px;
+        display: flex;
+        flex-wrap: wrap;
+        height: 439px;
+        margin-top: -8px;
+    }
+
     &_title {
         display: flex;
         margin-top: 33px;
@@ -17,6 +34,10 @@
         font-size: 16px;
         line-height: 22px;
         color: #1E0606;
+
+        @media screen and (max-width: 376px) {
+            font-size: 14px;
+        }
     }
 }
 
@@ -27,6 +48,25 @@
     margin-top: -15px;
     margin-left: 320px;
     width: 964px;
+
+    @media screen and (max-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 768px;
+        justify-content: start;
+        align-content: flex-start;
+        margin-left: 310px;
+        margin-top: -28px;
+    }
+
+    @media screen and (max-width: 376px) {
+        display: flex;
+        flex-direction: column;
+        width: 376px;
+        margin-left: 291px;
+        margin-top: -28px;
+    }
 }
 
 /* cost style */
@@ -37,6 +77,16 @@
     margin-top: 10px;
     margin-bottom: 42px;
     margin-left: -289px;
+
+    @media screen and (max-width: 768px) {
+        width: 164px;
+        margin-right: 60px;
+    }
+
+    @media screen and (max-width: 376px) {
+        width: 167px;
+        margin-top: -10px;
+    }
 }
 
 .set_range {
@@ -77,6 +127,10 @@
     font-size: 16px;
     line-height: 22px;
     color: #1E0606;
+
+    @media screen and (max-width: 376px) {
+        font-size: 14px;
+    }
 }
 
 /* color style */
@@ -87,6 +141,16 @@
     margin-bottom: 42px;
     margin-left: 96px;
     flex-direction: column;
+
+    @media screen and (max-width: 768px) {
+        margin-left: 76px;
+        margin-right: 60px;
+    }
+
+    @media screen and (max-width: 376px) {
+        margin-left: -287px;
+        margin-top: -72px;
+    }
 }
 
 .set_color {
@@ -99,6 +163,12 @@
     line-height: 22px;
     width: max-content;
     color: #1E0606;
+
+    @media screen and (max-width: 376px) {
+        font-size: 14px;
+        display: flex;
+        margin-top: -5px;
+    }
 }
 
 .color_label {
@@ -135,7 +205,7 @@
     background-image: url("/img/checkbox.svg");
 }
 
-.color_input:checked + .color_label::before {
+.color_input:checked+.color_label::before {
     content: "";
     cursor: pointer;
     display: inline-block;
@@ -151,6 +221,18 @@
     margin-top: 10px;
     margin-left: 125px;
     flex-direction: column;
+
+    @media screen and (max-width: 768px) {
+        width: 131px;
+        margin-right: 90px;
+        margin-left: 17px;
+    }
+
+    @media screen and (max-width: 376px) {
+        width: 112px;
+        margin-left: -112px;
+        margin-top: -232px;
+    }
 }
 
 .set_delivery {
@@ -163,6 +245,10 @@
     font-size: 16px;
     line-height: 22px;
     color: #1E0606;
+
+    @media screen and (max-width: 376px) {
+        font-size: 14px;
+    }
 }
 
 .delivery_label {
@@ -175,8 +261,8 @@
     }
 
     &:active {
-    text-decoration-line: underline;
-    text-decoration-color: #1E0606;
+        text-decoration-line: underline;
+        text-decoration-color: #1E0606;
     }
 }
 
@@ -197,8 +283,8 @@
     height: 20px;
     background-image: url("/img/radio.svg");
 }
-    
-.delivery_input:checked + .delivery_label::before {
+
+.delivery_input:checked+.delivery_label::before {
     content: "";
     cursor: pointer;
     display: inline-block;
@@ -213,12 +299,31 @@
     display: flex;
     margin-left: 64px;
     margin-top: 10px;
+
+    @media screen and (max-width: 768px) {
+        width: 131px;
+        margin-top: -75px;
+        margin-right: 259px;
+        margin-left: -289px;
+    }
+
+    @media screen and (max-width: 376px) {
+        width: 131px;
+        margin-top: 32px;
+        margin-left: -287px;
+    }
 }
 
 .amount_list {
     display: flex;
     margin-left: -105px;
     margin-top: 0px;
+
+    @media screen and (max-width: 376px) {
+        width: 131px;
+        margin-left: -95px;
+        margin-top: -5px;
+    }
 }
 
 .amount_btn {
@@ -238,14 +343,20 @@
     border-style: none;
     cursor: pointer;
 
+    @media screen and (max-width: 376px) {
+        font-size: 14px;
+        width: 80px;
+        height: 29px;
+    }
+
     &:hover {
         background-color: #EDDEEB;
         border-style: none;
     }
 
     &:active {
-    background-color: #F3D0DB;
-    border-style: none;
+        background-color: #F3D0DB;
+        border-style: none;
     }
 }
 
@@ -258,4 +369,15 @@
     width: 95px;
     height: 40px;
     padding: 9px 22px 9px 22px;
+
+    @media screen and (max-width: 768px) {
+        margin-top: -12px;
+        flex-wrap: wrap;
+    }
+
+    @media screen and (max-width: 376px) {
+        margin-top: 10px;
+        flex-wrap: wrap;
+        margin-left: -162px;
+    }
 }

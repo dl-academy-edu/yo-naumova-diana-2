@@ -7,8 +7,8 @@
         <meta name="format-detection" content="telephone=no">
 
         <title>Main</title>
-        <meta name="description" content="">
-        <meta name="keywords" content="">
+        <meta name="description" content="Design Life Kids shop. We offer goods for kids and home.">
+        <meta name="keywords" content="toys, home goods, accessories, apparel kids">
 
         <script>
         var docElement = document.documentElement;
@@ -25,6 +25,14 @@
         @@include('blocks/header.html')
         <main class="main">
             <div class="banner container">
+                <div class="banner_audio">
+                    <audio controls class="audio_controls">
+                        <source src="./audio/piano_sound.ogg" type="audio/ogg; codecs=vorbis">
+                        <source src="./audio/piano_sound.mp3" type="audio/mpeg">
+                        <source src="./audio/piano_sound.wav" type="audio/wav">
+                        Тег audio не поддерживается вашим браузером.
+                    </audio>
+                </div>
                 <div class="banner_wrapper">
                     <ul class="banner_list">
                         <li class="banner_list-number">01</li>
@@ -59,24 +67,32 @@
                 <ul class="categories_list">
                     @@include('blocks/category.html',{
                         'img': "./img/shirt.jpg",
+                        'alt': "Shirt",
+                        'classPic': "shirt_pic",
+                        'page': "#",
                         'name': "APPAREL KIDS",
-                        'className': "categories_list-link",
-                        'page': "#"
+                        'className': "categories_list-link"
                     })
                     @@include('blocks/category.html',{
                         'img': "./img/sock.jpg",
+                        'alt': "Sock",
+                        'classPic': "sock_pic",
                         'page': "#",
                         'className': "categories_list-link",
                         'name': "HOLIDAY SHOP"
                     })
                     @@include('blocks/category.html',{
                         'img': "./img/deer.jpg",
+                        'alt': "Deer",
+                        'classPic': "deer_pic",
                         'page': "./toys.html",
                         'className': "categories_list-link",
                         'name': "TOYS",
                     })
                     @@include('blocks/category.html',{
                         'img': "./img/yeti.jpg",
+                        'alt': "Yeti",
+                        'classPic': "yeti_pic",
                         'page': "#",
                         'className': "categories_list-link",
                         'name':"ACCESSORIES"
@@ -95,7 +111,13 @@
                 </ul>
             </section>
             <section class="delivery container">
-                <img src="./img/woman.jpg" alt="Woman" width="480" height="559" class="delivery_pic">
+                <picture>
+                    <source srcset="./img/woman-mobile.jpg, ./img/woman-mobile-2x.jpg 2x"
+                            media="(max-width:376px)">
+                    <source srcset="./img/woman-tablet.jpg, ./img/woman-tablet-2x.jpg 2x"
+                            media="(max-width:768px)">
+                    <img srcset="./img/woman.jpg, ./img/woman-2x.jpg 2x" alt="Woman" class="delivery_pic">
+                </picture>
                 <ul class="delivery_list">
                     <li class="delivery-title">
                         @@include('blocks/title.html',{
@@ -126,12 +148,12 @@
             <div class="companies container">
                 <ul class="companies_list">
                     <li class="companies_list-item"><img src="./img/mail.png" width="193" height="60"
-                            alt="mail.ru group_logo"></li>
-                    <li class="companies_list-item"><img src="./img/apple.png" width="179" height="61" alt="Apple_logo">
+                            alt="mail.ru group_logo" class="mail_pic"></li>
+                    <li class="companies_list-item"><img src="./img/apple.png" width="179" height="61" alt="Apple_logo" class="apple_pic">
                     </li>
-                    <li class="companies_list-item"><img src="./img/eltex.png" width="216" height="46" alt="ELTEX_logo">
+                    <li class="companies_list-item"><img src="./img/eltex.png" width="216" height="46" alt="ELTEX_logo" class="eltex_pic">
                     </li>
-                    <li class="companies_list-item"><img src="./img/owox.png" width="211" height="40" alt="OWOX_logo">
+                    <li class="companies_list-item"><img src="./img/owox.png" width="211" height="40" alt="OWOX_logo" class="owox_pic">
                     </li>
                 </ul>
             </div>
@@ -170,9 +192,8 @@
                     </li>
                     <li class="contacts_list-map">
                         <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d3438.979307179263!2d-122.42051417544492!3d37.776961027283065!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1677918726204!5m2!1sru!2sru"
-                        width="483" height="200" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade">
+                        src="https://yandex.ru/map-widget/v1/?um=constructor%3A79bc63b36fa63c370fcb125f621bc793752965e300de5cf2d56c093493061396&amp;source=constructor"
+                        width="480" height="210" frameborder="0">
                         </iframe>
                     </li>
                 </ul>
@@ -183,6 +204,7 @@
         
         @@include('blocks/popup.html')
         <script src="./js/popup.min.js"></script>
+        <script src="./js/menu.js"></script>
         <script src="js/app.js" defer></script>
     </body>
 </html>

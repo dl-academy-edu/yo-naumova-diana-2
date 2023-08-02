@@ -7,8 +7,8 @@
         <meta name="format-detection" content="telephone=no">
 
         <title>Animation</title>
-        <meta name="description" content="">
-        <meta name="keywords" content="">
+        <meta name="description" content="Personal project  CSS animation made on front-end development curses.">
+        <meta name="keywords" content="animation, CSS, front-end curses">
 
         <script>
         var docElement = document.documentElement;
@@ -23,33 +23,35 @@
     </head>
     <body>
         @@include('blocks/header.html')
-        <main class="animation">
+        <main class="animation container">
             <section class="search_line container">
                 <h1 class="page_title">Animation Scene</h1>
-                <ul class="search_line_list">
-                    <li class="search_line_list-item"><a class="search_line_list-link" href="/index.html">Home</a></li>
-                    <li class="search_line_list-item"><button type="button" class="search_line_button-ahead"><img src="./img/icon/ahead.svg" alt="btn-ahead" width="8" height="12"></button>
-                    </li>
-                    <li class="search_line_list-item"><a class="search_line_list-link" href="/animation.html">Animation</a></li>
-                </ul>
+                @@include('blocks/search-line.html',{
+                    'page': "/animation.html",
+                    'page-name': "Animation"
+                })
             </section>
             <div class="scene">
-                <img class="scene_pic city" src="./img/animation_shots/city.jpg" alt="City" width="1585px" height="630px">
-                <img class="scene_pic sky" src="./img/animation_shots/sky.png" alt="Sky" width="1342px" height="135px">
-                <img class="scene_pic first_car" src="./img/animation_shots/car_one.png" alt="First_car" width="251px" height="99px">
-                <img class="scene_pic second_car" src="./img/animation_shots/car_two.png" alt="Second_car" width="203px" height="96px">
-                <img class="scene_pic third_car" src="./img/animation_shots/car_three.png" alt="Third_car" width="246px" height="65px">
-                <img class="scene_pic fourth_car" src="./img/animation_shots/car_four.png" alt="Fourth_car" width="268px" height="126px">
-                <img class="scene_pic first_bg_lantern" src="./img/animation_shots/bg_lantern.png" alt="Background_lantern" width="151px" height="395px">
-                <img class="scene_pic second_bg_lantern" src="./img/animation_shots/bg_lantern.png" alt="Background_lantern" width="151px" height="395px">
-                <img class="scene_pic taxi" src="./img/animation_shots/taxi.png" alt="Taxi" width="886px" height="266px">
-                <img class="scene_pic message_taxi" src="./img/animation_shots/message_taxi.svg" alt="Taxi_driver_message" width="161px" height="99px">
-                <img class="scene_pic lantern" src="./img/animation_shots/lantern.png" alt="Lantern" width="214px" height="562px">
-                <img class="scene_pic woman" src="./img/animation_shots/woman.png" alt="Woman" width="98px" height="267px">
-                <img class="scene_pic message_woman" src="./img/animation_shots/message_woman.svg" alt="Woman_message" width="161px" height="99px">
-                <img class="scene_pic man" src="./img/animation_shots/man.png" alt="Man" width="205px" height="391px">
-                <img class="scene_pic message_man" src="./img/animation_shots/message_man.svg" alt="Man_message" width="160px" height="77px">
-                <img class="scene_pic suitcases" src="./img/animation_shots/suitcases.png" alt="Suitcases" width="191px" height="95px">
+                <div class="scene_pic">
+                    <img class="scene_pic city" src="./img/animation_shots/city.jpg" alt="City" width="1585px" height="630px">
+                    <img class="scene_pic sky" src="./img/animation_shots/sky.png" alt="Sky" width="1342px" height="135px">
+                    <img class="scene_pic first_car" src="./img/animation_shots/car_one.png" alt="First_car" width="251px" height="99px">
+                    <img class="scene_pic second_car" src="./img/animation_shots/car_two.png" alt="Second_car" width="203px" height="96px">
+                    <img class="scene_pic third_car" src="./img/animation_shots/car_three.png" alt="Third_car" width="246px" height="65px">
+                    <img class="scene_pic fourth_car" src="./img/animation_shots/car_four.png" alt="Fourth_car" width="268px" height="126px">
+                    <img class="scene_pic first_bg_lantern" src="./img/animation_shots/bg_lantern.png" alt="Background_lantern" width="151px" height="395px">
+                    <img class="scene_pic second_bg_lantern" src="./img/animation_shots/bg_lantern.png" alt="Background_lantern" width="151px" height="395px">
+                    <img class="scene_pic taxi" src="./img/animation_shots/taxi.png" alt="Taxi" width="886px" height="266px">
+                    <img class="scene_pic message_taxi" src="./img/animation_shots/message_taxi.svg" alt="Taxi_driver_message" width="161px" height="99px">
+                    <img class="scene_pic lantern" src="./img/animation_shots/lantern.png" alt="Lantern" width="214px" height="562px">
+                    <img class="scene_pic woman" src="./img/animation_shots/woman.svg" alt="Woman" width="98px" height="267px">
+                    <img class="scene_pic woman_hand" src="./img/animation_shots/woman_hand.svg" alt="Woman-hand" width="64px" height="45px">
+                    <img class="scene_pic message_woman" src="./img/animation_shots/message_woman.svg" alt="Woman_message" width="161px" height="99px">
+                    <img class="scene_pic man_hand" src="./img/animation_shots/man_hand.svg" alt="Man-hand">
+                    <img class="scene_pic man" src="./img/animation_shots/man.svg" alt="Man" width="205px" height="391px">
+                    <img class="scene_pic message_man" src="./img/animation_shots/message_man.svg" alt="Man_message" width="160px" height="77px">
+                    <img class="scene_pic suitcases" src="./img/animation_shots/suitcases.png" alt="Suitcases" width="191px" height="95px">
+                </div>
             </div>
         </main>
         @@include('blocks/footer.html')

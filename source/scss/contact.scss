@@ -1,6 +1,6 @@
 .page_title {
     display: flex;
-    margin-top: 56px;
+    margin-top: 60px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
@@ -8,54 +8,48 @@
     line-height: 49px;
     text-transform: uppercase;
     color: #1E0606;
-}
 
-/* bread crumbs */
-
-.search_line {
-    display: block;
-
-    &_list {
-        display: flex;
-        margin-left: -38px;
-        margin-top: -12px;
-        column-gap: 14px;
-    
-        &-link {
-            font-family: 'Crimson Text';
-            font-style: italic;
-            font-weight: 400;
-            font-size: 20px;
-            line-height: 26px;
-            color: #1E0606;
-    
-            &:hover {
-                opacity: 0.5;
-            }
-    
-            &:active {
-                opacity: 0.2;
-            }
-        }
+    @media screen and (max-width: 768px) {
+        margin-top: 20px;
+        margin-left: 10px;
+        font-size: 36px;
+        line-height: 44px;
     }
 
-    &_button-ahead {
-        border: none;
-        background-color: #ffffff;
+    @media screen and (max-width: 375px) {
+        font-size: 24px;
+        line-height: 29px;
     }
 }
+
+/* bread crumbs - search-line*/
+
 
 /* form style */
 
 .contact_page {
     display: flex;
-    margin-top: 50px;
+    margin-top: 45px;
     column-gap: 119px;
     margin-bottom: -33px;
+
+    @media screen and (max-width: 768px) {
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: -7px;
+    }
+
+    @media screen and (max-width: 376px) {
+        margin-top: -33px;
+    }
 }
 
 .form_fields {
     display: flex;
+
+    @media screen and (max-width: 768px) {
+        margin-bottom: -40px;
+    }
 }
 
 .form {
@@ -66,6 +60,16 @@
 
 .form_inner-wr {
     padding: 42px 40px 65px 40px;
+
+    @media screen and (max-width: 768px) {
+        padding: 42px 50px 75px 60px;
+        margin-left: -5px;
+    }
+
+    @media screen and (max-width: 376px) {
+        padding: 42px 13px 75px 23px;
+
+    }
 }
 
 .form_wrapper {
@@ -74,11 +78,19 @@
 
 .form_wrapper-name {
     display: flex;
+
+    @media screen and (max-width: 376px) {
+        // margin-left: 150px;
+    }
 }
 
 .form_inner {
     display: flex;
     column-gap: 20px;
+
+    @media screen and (max-width: 376px) {
+        flex-direction: column;
+    }
 }
 
 .form_label {
@@ -102,15 +114,29 @@
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
-    line-height: 25px;
+    line-height: 21px;
     color: #1E0606;
+
+    @media screen and (max-width: 768px) {
+        width: 536px;
+        height: 50px;
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    @media screen and (max-width: 376px) {
+        width: 285px;
+        height: 40px;
+        font-size: 14px;
+        line-height: 16px;
+    }
 }
 
 .form_input {
     display: flex;
     margin-top: 3px;
     margin-bottom: 20px;
-    width: 248px;
+    width: 279px;
     height: 48px;
     padding: 0px 20px 0px 20px;
     border: 1px solid #00000033;
@@ -120,6 +146,16 @@
     font-size: 18px;
     line-height: 25px;
     color: #1E0606;
+
+    @media screen and (max-width: 768px) {
+        width: 258px;
+        height: 48px;
+    }
+
+    @media screen and (max-width: 376px) {
+        width: 285px;
+        height: 40px;
+    }
 }
 
 .form_message {
@@ -132,7 +168,7 @@
     margin-bottom: 22px;
     resize: none;
     padding: 0px 20px 0px 20px;
-    width: 558px;
+    width: 579px;
     height: 150px;
     border: 1px solid #00000033;
     font-family: 'Open Sans';
@@ -141,6 +177,16 @@
     font-size: 18px;
     line-height: 25px;
     color: #1E0606;
+
+    @media screen and (max-width: 768px) {
+        width: 536px;
+        height: 150px;
+    }
+
+    @media screen and (max-width: 376px) {
+        width: 285px;
+        height: 150px;
+    }
 }
 
 /* consent style */
@@ -153,8 +199,17 @@
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 19px;
+    line-height: 16px;
     color: #1E0606;
+
+    @media screen and (max-width: 768px) {
+        column-gap: 10px;
+        margin-right: 10px;
+    }
+
+    @media screen and (max-width: 376px) {
+        width: 280px;
+    }
 }
 
 /* checkbox consent */
@@ -173,15 +228,23 @@
     width: 19px;
     height: 19px;
     background-image: url("/img/checkbox.svg");
+
+    @media screen and (max-width: 376px) {
+        width: 39px;
+    }
 }
 
-.form_consent:checked + .form_label-consent::before {
+.form_consent:checked+.form_label-consent::before {
     content: "";
     cursor: pointer;
     display: inline-block;
     width: 19px;
     height: 19px;
     background-image: url("/img/checked.svg");
+
+    @media screen and (max-width: 376px) {
+        width: 39px;
+    }
 }
 
 .form_button {
@@ -200,6 +263,16 @@
     display: flex;
     width: 380px;
 
+    @media screen and (max-width: 768px) {
+        width: 536px;
+        text-align: center;
+    }
+
+    @media screen and (max-width: 376px) {
+        width: 335px;
+        text-align: center;
+    }
+
     &_list {
         display: flex;
         flex-direction: column;
@@ -216,8 +289,13 @@
         font-size: 16px;
         line-height: 22px;
         color: #1E0606;
+
+        @media screen and (max-width: 376px) {
+            font-size: 14px;
+            line-height: 19px;
+        }
     }
-    
+
     &_title {
         display: flex;
         margin-top: 4px;

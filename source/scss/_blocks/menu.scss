@@ -1,0 +1,142 @@
+.show_menu {
+
+    display: none;
+
+    @media screen and (max-width: 768px) {
+        display: block;
+    }
+
+    @media screen and (max-width: 376px) {
+        display: block;
+    }
+}
+
+.menu_wrapper {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 178px;
+    background-color: #FFFFFF;
+    transform: translateY(-500px);
+    transition: .4s;
+    background: rgba(125, 151, 218, 0.8);
+    z-index: 3;
+
+    @media screen and (max-width: 376px) {
+        width: 375px;
+        height: 812px;
+        top: 0;
+        left: -14px;
+    }
+}
+
+.menu_wrapper_open {
+    display: block;
+    transform: translateY(0);
+}
+
+.menu_inner {
+    display: flex;
+    justify-content: center;
+    margin-top: -16px;
+}
+
+.menu_list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 15px;
+    padding: 0;
+    background-color: #fff;
+
+    &-link {
+        display: flex;
+        margin-left: 28px;
+        text-align: center;
+        font-family: Open Sans;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: uppercase;
+        color: #1E0606;
+    }
+
+    &-contact {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+        margin-left: 26px;
+        margin-bottom: 25px;
+        text-align: center;
+        font-family: 'Open Sans';
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: uppercase;
+        color: #1E0606;
+    }
+
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+
+    @media screen and (max-width: 376px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 10px;
+        width: 375px;
+    }
+}
+
+.close_menu {
+    width: 15px;
+    height: 15px;
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+    background-image: url("../img/menu_close-btn.svg");
+
+    &:hover {
+        opacity: 0.5;
+    }
+
+    &:active {
+        opacity: 0.2;
+    }
+}
+
+
+.menu_list_header {
+    display: none;
+
+    @media screen and (max-width: 376px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 114px;
+        padding: 0;
+        height: 73px;
+    }
+}
+
+.menu_logo {
+    display: none;
+
+    @media screen and (max-width: 376px) {
+        display: flex;
+    }
+}
+
+.menu_search {
+    display: none;
+
+    @media screen and (max-width: 376px) {
+        display: flex;
+    }
+}

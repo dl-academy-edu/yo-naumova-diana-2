@@ -3,8 +3,15 @@
 .header {
     display: flex;
     align-items: center;
+
     @media screen and (max-width: 768px) {
-        margin-left: 40px;
+        margin-left: 20px;
+        margin-top: -35px;
+    }
+
+    @media screen and (max-width: 376px) {
+        margin-left: 15px;
+        margin-top: -45px;
     }
 
     &_list {
@@ -19,12 +26,19 @@
             @media screen and (max-width: 768px) {
                 display: none;
             }
+
             &-menu {
                 display: none;
+
                 @media screen and (max-width: 768px) {
                     display: flex;
                     justify-content: center;
-                    margin-left: 360px;
+                    margin-left: 203px;
+                }
+
+                @media screen and (max-width: 376px) {
+                    display: flex;
+                    margin-left: 33px;
                 }
             }
         }
@@ -45,7 +59,7 @@
             &:hover {
                 opacity: 0.5;
             }
-        
+
             &:active {
                 opacity: 0.2;
             }
@@ -58,8 +72,13 @@
         margin-top: 60px;
         align-items: center;
         column-gap: 23px;
+
         @media screen and (max-width: 768px) {
-            margin-left: 420px;
+            margin-left: 206px;
+        }
+
+        @media screen and (max-width: 376px) {
+            margin-left: 33px;
         }
 
         &-item {
@@ -67,6 +86,13 @@
                 @media screen and (max-width: 768px) {
                     display: none;
                 }
+            }
+        }
+
+        .search_pic {
+            @media screen and (max-width: 376px) {
+                width: 13px;
+                height: 13px;
             }
         }
 
@@ -81,11 +107,11 @@
             text-transform: uppercase;
             color: #1E0606;
             transition: opacity 0.7s;
-        
+
             &:hover {
                 opacity: 0.5;
             }
-        
+
             &:active {
                 opacity: 0.2;
             }
@@ -99,6 +125,16 @@
     margin-right: 60px;
     margin-top: 50px;
     transition: opacity 0.7s;
+
+    @media screen and (max-width: 768px) {
+        width: 62px;
+        height: 32px;
+    }
+
+    @media screen and (max-width: 376px) {
+        width: 42px;
+        height: 22px;
+    }
 
     &:hover {
         opacity: 0.5;

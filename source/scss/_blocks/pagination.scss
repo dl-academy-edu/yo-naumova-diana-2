@@ -11,7 +11,18 @@
         margin-left: 37px;
         margin-bottom: -41px;
         column-gap: 65px;
-    
+
+        @media screen and (max-width: 768px) {
+            margin-top: 61px;
+            margin-bottom: -86px;
+            margin-left: -52px;
+        }
+
+        @media screen and (max-width: 376px) {
+            margin-left: -52px;
+            column-gap: 52px;
+        }
+
         &-link {
             display: flex;
             font-family: 'Montserrat';
@@ -22,16 +33,16 @@
             text-transform: uppercase;
             color: #1E0606;
             transition: color 0.7s;
-        
+
             &:hover {
                 color: #AAAAAA;
 
             }
-        
+
             &:active {
                 color: #C29974;
             }
-            
+
         }
     }
 
@@ -41,19 +52,28 @@
         margin-right: 390px;
         border-style: none;
         background-color: #ffffff;
-    
+
         &:hover {
             background-image: url("/img/page_back_hover.svg");
             transform: rotate(180deg);
             background-repeat: no-repeat;
         }
-    
+
         &:active {
             background-image: url("/img/page_back_active.svg");
             transform: rotate(180deg);
             background-repeat: no-repeat;
         }
-        
+
+        @media screen and (max-width: 768px) {
+            margin-left: 7px;
+            margin-right: 130px;
+        }
+
+        @media screen and (max-width: 376px) {
+            margin-left: 16px;
+            margin-right: -8px;
+        }
     }
 
     &_button-ahead {
@@ -61,19 +81,27 @@
         margin-left: 391px;
         border-style: none;
         background-color: #ffffff;
-    
+
         &:hover {
             background-image: url("/img/page_ahead_hover.svg");
             background-repeat: no-repeat;
         }
-    
+
         &:active {
             background-image: url("/img/page_ahead_active.svg");
             background-repeat: no-repeat;
+        }
+
+        @media screen and (max-width: 768px) {
+            margin-left: 131px;
+        }
+
+        @media screen and (max-width: 376px) {
+            margin-left: -5px;
         }
     }
 }
 
 .nav-link--vector:hover {
     opacity: 0;
- }
+}

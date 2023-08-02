@@ -7,8 +7,8 @@
         <meta name="format-detection" content="telephone=no">
 
         <title>SVG</title>
-        <meta name="description" content="">
-        <meta name="keywords" content="">
+        <meta name="description" content="Personal project CSS animation of SVG made on front-end development curses.">
+        <meta name="keywords" content="animation, svg, CSS, front-end curses">
 
         <script>
         var docElement = document.documentElement;
@@ -26,12 +26,10 @@
         <main class="svg">
             <section class="search_line container">
                 <h1 class="page_title">SVG Animation</h1>
-                <ul class="search_line_list">
-                    <li class="search_line_list-item"><a class="search_line_list-link" href="/index.html">Home</a></li>
-                    <li class="search_line_list-item"><button type="button" class="search_line_button-ahead"><img src="./img/icon/ahead.svg" alt="btn-ahead" width="8" height="12"></button>
-                    </li>
-                    <li class="search_line_list-item"><a class="search_line_list-link" href="/svg.html">SVG</a></li>
-                </ul>
+                @@include('blocks/search-line.html',{
+                    'page': "/svg.html",
+                    'page-name': "SVG"
+                })
             </section>
             <div class="svg_wrapper container">
                 <svg class="land" width="458" height="391" viewBox="0 0 458 391" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -67,7 +65,7 @@
                     </g>
                 </svg>
                 
-                <svg class="arrow" d="0" fill="blue" xmlns="http://www.w3.org/2000/svg">
+                <!-- <svg class="arrow" d="0" fill="blue" xmlns="http://www.w3.org/2000/svg">
 
                     <path d="M150 150,L 0 50, L 0 25, L 40 25, L 40 10, L 75 37, L 40 63, L 40 50, L 0 50"></path>
 
@@ -76,7 +74,7 @@
                 <svg class="star" fill="red"xmlns="http://www.w3.org/2000/svg" width="320" height="320">
 
                     <polygon points="50 100, 145 100, 180 10, 220 100, 315 100, 240 178, 270 280, 185 220, 100 280 ,130 178"></polygon>
-                </svg>
+                </svg> -->
             </div>
         </main>
         
