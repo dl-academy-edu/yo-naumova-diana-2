@@ -8,8 +8,8 @@
     }
 
     @media screen and (max-width: 376px) {
-        margin-left: -20px;
-        width: 375px;
+        margin-left: -6px;
+        width: 367px;
         overflow-x: hidden;
     }
 
@@ -20,6 +20,10 @@
         @media screen and (max-width: 768px) {
             margin-top: 20px;
         }
+        @media screen and (max-width: 376px) {
+            font-size: 24px;
+            line-height: 29px;
+        }  
     }
 
     &_list {
@@ -87,9 +91,10 @@
         }
 
         @media screen and (max-width: 376px) {
-            width: 410px;
-            margin-top: 27px;
-            margin-left: -40px;
+          font-size: 14px;
+          line-height: 19px;
+          width: 368px;
+          align-items: start;
         }
     }
 
@@ -106,7 +111,6 @@
         @media screen and (max-width: 376px) {
             width: 33px;
             height: 33px;
-            margin-top: -34px;
         }
     }
 
@@ -125,7 +129,6 @@
         @media screen and (max-width: 376px) {
             width: 33px;
             height: 33px;
-            margin-top: -34px;
         }
     }
 }
