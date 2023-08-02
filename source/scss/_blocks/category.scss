@@ -8,8 +8,9 @@
     }
 
     @media screen and (max-width: 376px) {
-        margin-left: -2px;
+        margin-left: -20px;
         width: 375px;
+        overflow-x: hidden;
     }
 
     &_title {
